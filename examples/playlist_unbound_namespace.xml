@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<music:playlist>
+    <music:song>
+        <music:titel>
+            Bluemoon
+        </music:titel>
+        <music:komponist>
+            Richard Rodgers
+        </music:komponist>
+        <music:interpret>
+            Ella Fitzgerald
+        </music:interpret>
+        <music:genre>
+            Jazz
+        </music:genre>
+    </music:song>
+</music:playlist>

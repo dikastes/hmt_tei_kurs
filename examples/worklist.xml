@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<worklist>
+    <piece1>
+        <title lang="english"> ... </title>
+        <title lang="german"> ... </title>
+        <composer> ... </composer>
+        <year> ... </year>
+        <key> ... </key>
+    </piece1>
+    <piece2>
+        <title lang="english"> Symphony No. 3 </title>
+        <title lang="german"> Symphonie Nr. 3 </title>
+        <composer> Carl Reinecke </composer>
+        <year> 1895 </year>
+        <key> G minor </key>
+        <movement number="1"> ... </movement>
+    </piece2>
+</worklist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<musik:playlist xmlns:musik="https://hmt-leipzig.de/musik">
+    <musik:song>
+        <musik:titel>
+            Bluemoon
+        </musik:titel>
+        <musik:komponist>
+            Richard Rodgers
+        </musik:komponist>
+        <musik:interpret>
+            Ella Fitzgerald
+        </musik:interpret>
+        <musik:genre>
+            Jazz
+        </musik:genre>
+    </musik:song>
+</musik:playlist>

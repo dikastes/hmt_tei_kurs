@@ -1,0 +1,595 @@
+---
+layout: default
+title: Einführung
+permalink: 1_einfuehrung
+---
+
+class: center, middle
+
+# TEI-Kurs
+
+Matthias Richter
+
+.mail[matthias.richter@slub-dresden.de]
+
+---
+
+class: middle
+
+# Fahrplan Kurs
+
+1. XML (Extensible Markup Language), DTD (Document Type Definition)
+2. TEI (Text Encoding Initiative), Oxygen
+3. Übung Transkription
+4. Weiteres: Correspsearch, Oxygen-Alternativen, XSLT/HTML
+
+---
+
+class: middle
+
+# Fahrplan heute
+
+- Einführung XML
+- Tools und Dateiformate: Editor, Browser; Rohtext, HTML, ODT/DOCX
+- eintragsartige Datensätze
+- narrative Datensätze
+- DTD
+
+---
+
+class: middle
+
+# Kursmaterialien, Folien etc
+
+Kursmaterialien unter https://github.com/dikastes/hmt_tei_kurs
+
+---
+
+layout:true
+
+# XML: Basics
+
+---
+
+## Einführung
+
+Extensible Markup Language
+
+- W3C-Standard: https://www.w3.org/XML
+- menschen-/maschinenlesbar
+- Webseiten, Datenaustausch, Vektorgrafiken ...
+- breite Unterstützung in praktisch allen Programmiersprachen, Editoren, Browsern ...
+- Meta-Auszeichnungsprache:
+    - Auszeichnungssprache: maschinenlesbare Sprache für Gliederung und Formatierung von Daten (bspw Texten)
+        - HTML
+        - Markdown
+        - LaTeX
+    - Meta: kein fester Satz an Auszeichnungselementen
+- keine Programmiersprache
+- nützlich für strukturierte Daten, nicht für größere digitalisierte Daten (Fotos, Audio, Video)
+
+---
+
+## Syntax
+
+**Auszeichnungen**
+
+Ein *einfacher* Text **kann** verschiedene .serif[Auszeichnungen] enthalten.
+
+--
+
+```
+Ein <italic> einfacher </italic> Text <bold> kann </bold> verschiedene <serif> Auszeichnungen </serif> enthalten.
+```
+
+Auszeichnungen bestehen aus **Tags**.
+Tags sind Bezeichner, die in **eckigen Klammern** notiert werden.
+Tags können ein **Element** eröffnen und schließen.
+Schließende Tags erhalten nach der öffnenden Klammer einen **Schrägstrich**.
+
+Alles zwischen Start- und Endtag ist der **Inhalt** eines Elements.
+Der Inhalt der ausgezeichneten Elemente wird auch **Character Data** (CDATA) genannt.
+
+
+---
+
+## Syntax
+
+**Wurzelelement**
+
+Jedes XML-Dokument enthält ein Wurzelelement.
+
+```
+<text> Ein <italic> einfacher </italic> Text <bold> kann </bold> verschiedene <serif> Auszeichnungen </serif>
+enthalten. </text>
+```
+
+--
+
+**Schachtelungen**
+
+Elemente können geschachtelt sein.
+Geschachtelte Elemente werden **Kindelemente** genannt.
+Übergeordnete Elemente heißen **Elternelemete**.
+Ein geschachteltes Element muss geschlossen werden, bevor das übergeordnete Element geschlossen wird.
+
+.wrong[
+```
+<text> Ein <italic> einfacher </italic> Text <bold> kann </bold> verschiedene <serif> </text>
+Auszeichnungen </serif> enthalten.
+```
+]
+
+???
+
+Der `</text>`-Tag darf erst nach dem `</serif>`-Tag stehen.
+Das `<text>`-Element enthält das `<serif>`-Element.
+Das heißt, das `<serif>`-Element wird begonnen, nachdem das `<text>`-Element begonnen wird, und geschlossen, nachdem das `<text>`-Element geschlossen wird.
+
+---
+
+## Syntax
+
+**Freiräume**
+
+Leerzeichen und Zeilenumbrüche können frei eingefügt werden.
+
+```
+<text>
+    Ein <italic> einfacher </italic> Text <bold> kann </bold> verschiedene <serif> Auszeichnungen </serif> enthalten.
+</text>
+```
+
+---
+
+## Syntax
+
+**Freiräume**
+
+Leerzeichen und Zeilenumbrüche können frei eingefügt werden.
+
+```
+<text>
+    Ein 
+    <italic> 
+        einfacher 
+    </italic> 
+    Text 
+    <bold> 
+        kann 
+    </bold> 
+    verschiedene 
+    <serif> 
+        Auszeichnungen 
+    </serif>
+    enthalten.
+</text>
+```
+
+---
+
+## Syntax
+
+**Leere Elemente**
+
+Elemente ohne Inhalt können abgekürzt notiert werden.
+
+```
+<empty/>
+```
+
+--
+
+**Großschreibung**
+
+XML unterscheidet zwischen Groß- und Kleinschreibung.
+
+```
+<emptyElement> </emptyElement>
+```
+
+.wrong[
+```
+<emptyElement> </emptyelement>
+```
+]
+
+---
+
+layout: false
+class: center, middle
+
+# Exkurs XML-Dateien
+
+
+---
+
+layout: true
+
+# XML-Konzepte 1
+
+---
+
+## Eintragsartige Strukturen
+
+```
+<terminology>
+    <term>
+        <englishName> computer </englishName>
+        <germanName> rechner </germanName>
+        <description> a computing device </description>
+    </term>
+    <term>
+        <englishName> file </englishName>
+        <germanName> datei </germanName>
+        <description> a record of cohesive data </description>
+    </term>
+    <term>
+        <englishName> program </englishName>
+        <germanName> programm </germanName>
+        <description> a set of instructions executable by a computer </description>
+    </term>
+</terminology>
+```
+
+---
+
+## Ausfeilen durch Schachteln
+
+```
+<terminology>
+    <term>
+        <names>
+            <english> computer </english>
+            <german> rechner </german>
+        </names>
+        <description> a computing device </description>
+    </term>
+    <term>
+        <names>
+            <english> file </english>
+            <german> datei </german>
+        </names>
+        <description> a record of cohesive data </description>
+    </term>
+    <term>
+        <names>
+            <english> program </english>
+            <german> programm </german>
+        </names>
+        <description> a set of instructions executable by a computer </description>
+    </term>
+</terminology>
+```
+
+---
+
+## Attribute
+
+```
+<terminology>
+    <term>
+        <name lang="english"> computer </name>
+        <name lang="german"> rechner </name>
+        <description> a computing device </description>
+    </term>
+    <term>
+        <name lang="english"> file </name>
+        <name lang="german"> datei </name>
+        <description> a record of cohesive data </description>
+    </term>
+    <term>
+        <name lang="english"> program </name>
+        <name lang="german"> programm </name>
+        <description> a set of instructions executable by a computer </description>
+    </term>
+</terminology>
+```
+
+**Attribute** werden im öffnenden Tag notiert.
+Sie folgen der Syntax .mono[Attributname="Attributwert"].
+
+---
+
+## Namen
+
+- Elementnamen
+- Attributnamen
+
+enthalten
+
+- alphanumerische Zeichen (a-z, A-Z, 0-9, ...)
+- -
+- _
+- .
+- nicht $ ; , % " & ...
+
+--
+
+beginnen mit alphanumerischem Zeichen oder _
+
+--
+
+mögliche Schreibweisen für zusammengesetzte Namen:
+
+- Camelcase: `longElementName`
+- Snakecase: `long_element_name`
+- Kebabcase: `long-element-name`
+
+nicht möglich: `long element name`
+
+---
+
+layout: false
+class: middle, center
+
+# Übung Eintragsartige Strukturen
+
+---
+
+layout: true
+
+# XML-Konzepte 2
+
+---
+
+## Escaping
+
+< kann nicht in CData auftreten
+
+Ausweg: `&amp;lt;`
+
+--
+
+& kann nicht in CData auftreten
+
+`&amp;amp;`
+
+--
+
+XML definiert:
+
+- < `&amp;lt;`
+- \> `&amp;gt;`
+- & `&amp;amp;`
+- " `&amp;quot;`
+- ' `&amp;apos;`
+
+---
+
+## CData-Sections und Kommentare
+
+```
+<element>
+    <![CDATA[
+        In der CData-Section müssen < und & nicht escaped werden.
+        Alles in der CData-Section wird wie wörtlicher Text behandelt.
+    ]]>
+    <!--
+        Eine Kommentarsection wird nicht interpretiert. Sie dient dazu,
+        Code mit menschenlesbaren Kommentaren zu annotieren
+    -->
+</element>
+```
+
+--
+
+## Die XML-Deklaration
+
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+```
+
+
+---
+
+layout: false
+class: center, middle
+
+# Übung Narrative Strukturen
+
+---
+
+layout: true
+
+# DTD
+
+---
+
+Document Type Definition
+
+- legt genutzte Elemente fest
+- definiert Kontexte für Elemente
+- legt genutzte Attribute fest
+- Basis für *Validität*
+
+---
+
+## Elementdeklarationen
+
+Dieses Dokument:
+
+```
+<person>
+    <name>
+        <first_name> Alan </first_name>
+        <last_name> Turing </last_name>
+    </name>
+    <profession>
+        computer scientist
+    </profession>
+    <profession>
+        mathematician>
+    </profession>
+    <profession>
+        code breaker
+    </profession>
+</person>
+```
+
+kann mit dieser DTD beschrieben werden:
+
+```
+<!ELEMENT person (name, profession*)>
+<!ELEMENT name (first_name, last_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT profession (#PCDATA)>
+```
+
+---
+
+valide:
+
+```
+<person>
+    <name>
+        <first_name> Alan </first_name>
+        <last_name> Turing </last_name>
+    </name>
+</person>
+```
+
+nicht valide:
+
+```
+<person>
+    <profession>
+        computer scientist
+    </profession>
+    <profession>
+        mathematician>
+    </profession>
+    <profession>
+        code breaker
+    </profession>
+</person>
+```
+
+---
+
+valide:
+
+```
+<person>
+    <profession>
+        computer scientist
+    </profession>
+    <name>
+        <first_name> Alan </first_name>
+        <last_name> Turing </last_name>
+    </name>
+</person>
+```
+
+nicht valide:
+
+```
+<person>
+    <name>
+        <first_name> Alan </first_name>
+        <last_name> Turing </last_name>
+    </name>
+    was a
+    <profession>
+        computer scientist
+    </profession>
+    ,
+    <profession>
+        mathematician>
+    </profession>
+    , and
+    <profession>
+        code breaker
+    </profession>
+</person>
+```
+
+---
+
+## Kardinalitäten und Optionen
+
+Kardinalitäten werden durch Suffixe ausgedrückt:
+
+- \* 0-n
+- ? 0, 1
+- \+ 1-n
+
+Optionen werden durch die Pipe | markiert:
+
+```
+<!ELEMENT responsible_person (author | editor)>
+```
+
+Leere Elemente werden mit EMPTY angezeigt
+
+```
+<img src="path_to_source"/>
+
+<!ELEMENT img EMPTY>
+```
+
+---
+
+Gemischte Inhalte können mithilfe von #PCDATA, der Pipe und * erlaubt werden:
+
+```
+<p>
+    Dies ist ein Absatz mit <i> kursiven </i> und <b> fetten </b> Auszeichnungen.
+</p>
+
+<!ELEMENT p (#PCDATA | i | b)*>
+<!ELEMENT i (#PCDATA)*>
+<!ELEMENT b (#PCDATA)*>
+```
+
+---
+
+## Attribute
+
+Dieser Datensatz:
+
+```
+<term>
+    <name lang="english"> computer </name>
+    <name lang="german"> rechner </name>
+</term>
+```
+
+wird durch diese DTD beschrieben:
+
+```
+<!ELEMENT term (name)*>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name lang CDATA #REQUIRED>
+```
+
+---
+
+## ATTLISTS
+
+Jeder Eintrag einer ATTLIST besteht aus dem Attributnamen, dem Attributwertebereich und dem Attributwert.
+
+--
+
+## Wertebereich
+
+normalerweise CDATA, es können aber auch Aufzählungen gegeben werden: `<!ATTLIST name lang (english|german) #REQUIRED.
+
+--
+
+## Wert
+
+- \#REQUIRED: Attribut muss angegeben werden
+- \#IMPLIED: Attribut ist fakultativ
+- \#FIXED: Attribut hat festen Wert
+
+```
+<!ATTLIST name lang #FIXED "english">
+
+---
+
+layout: false
+class: middle, center
+
+# Übung DTD
