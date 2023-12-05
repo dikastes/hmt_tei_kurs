@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
+<!DOCTYPE playlist [
+    <!ELEMENT playlist (song+)>
+    <!ELEMENT song (titel, komponist+, interpret*, genre*)>
+    <!ELEMENT titel (#PCDATA)>
+    <!ELEMENT komponist (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT interpret (#PCDATA)>
+    ]>
+
 <playlist>
     <song>
         <titel>
@@ -14,5 +23,8 @@
         <genre>
             Jazz
         </genre>
+    </song>
+    <song>
+        <titel></titel>
     </song>
 </playlist>

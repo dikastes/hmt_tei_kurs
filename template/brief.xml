@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">WeGA, Briefe, Digitale Edition</title>
+            <title level="a">Franz Anton, Genovefa und Carl Maria von Weber an Markus Brenner in Oberdorf<lb/>Ansbach, Donnerstag, 21. Februar 1793</title>
+            <author key="A002074" xml:id="favweber">Weber, Franz Anton</author>
+            <author key="A002077" xml:id="genovefa">Weber, Genovefa</author>
+            <author key="A002068" xml:id="cmvweber">Weber, Carl Maria von</author>
+            <editor>Veit, Joachim</editor>
+            <respStmt>
+               <resp>Übertragung</resp>
+               <name>Eveline Bartlitz</name>
+               <name>Joachim Veit</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <name>Carl-Maria-von-Weber-Gesamtausgabe</name>
+               <address>
+                  <street>Hornsche Str. 39</street>
+                  <postCode>32756</postCode>
+                  <placeName>
+                     <country>D</country>
+                     <settlement key="A130001">Detmold</settlement>
+                  </placeName>
+               </address>
+            </publisher>
+            <idno type="WeGA" n="45"/>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Verbleib unbekannt</repository>
+               </msIdentifier>
+               <additional>
+                  <listBibl>
+                     <bibl n="firstPrint">Pisarowitz, Karl M.: <q>Vor 160 Jahren weilte Weber in Ansbach</q> in: Fränkische Landeszeitung Ansbach v. 31. Dez. 1953 (mit NS C.M.v.Webers); [danach Ü]</bibl>
+                     <bibl>Abb. bei <rs type="biblio" key="A110220">Rocholl 1999</rs>, S. 43</bibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName key="A002074">Weber, Franz Anton</persName>
+               <persName key="A002077">Weber, Genovefa</persName>
+               <persName key="A002068">Weber, Carl Maria von</persName>
+               <settlement key="A130088">Ansbach</settlement>
+               <date when="1793-02-21" n="02">21. Februar 1793</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName key="A000226">Brenner, Markus</persName>
+               <placeName>Oberdorf</placeName>
+            </correspAction>
+         </correspDesc>
+         <langUsage>
+            <language ident="de">German</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div hand="#favweber" type="writingSession" n="1">
+            <opener>
+               <salute>Liebster bester <persName key="A000226">HerzensVater</persName>.</salute>
+            </opener>
+            <p>Wie geht es doch um Gotteswillen zu, das wir gar nichts von Ihnen zu hören bekommen, wir haben Ihnen einige Mal geschrieben, und zwar das lezte Mahl auf Weynachten und NeuJahr. sie sind doch hoffentlich gesund und wohl, so wir Gottlob! auch sind. Bis zur Charwoche bleiben wir vermuthlich hier, wo es denn hingeht, kan noch nicht sagen, will es Ihnen aber schon schreiben. Meine liebe Herzensfrau meine einzige <persName key="A002077"><hi rend="latintype">Genovefa</hi></persName> küßt Ihnen von Herzen die Hände, wie auch <persName key="A002068">Karlchen</persName>, Er spricht wohl oft von seinem lieben GroßVater<supplied>.</supplied> schreiben sie mir doch bald, damit <supplied>wir</supplied> aus allen sorgen sind.</p> <closer rend="inline">Leben sie wohl und vergnügt. Ich bin von ganzem Herzen und Seele Zeit Lebens Ihr<lb/><seg rend="right">aufrichtig getreuer Sohn.<lb/><persName key="A002074">Franz Anton von <hi rend="latintype">Weber</hi></persName><lb/><hi rend="latintype">Director</hi></seg></closer>
+         </div>
+         <addSpan hand="#genovefa" spanTo="#genovefa_end"/>
+         <div type="writingSession" n="2">
+            <p><supplied>Fortsetzung von <persName key="A002077">Genovefa von Weber</persName>:</supplied></p>
+            <p>Lieber <rs type="person" key="A000226">Vatter</rs> schon auf 2 schreyben haben wier keine antwort er halten, welches wir vihlen kommer macht, ich bitte also um Eine baltige antwort, einen grieß an die frau <rs type="person" key="A008210">Mutter</rs> und an die ganze freintschaft,</p>
+            <closer><seg rend="right">ich aber bin bis in tott<lb/>Ihre sie liebende tochter<lb/><persName key="A002077">genowiefa v: <hi rend="underline" n="1">Weber</hi><lb/>N. brenner</persName></seg></closer>
+            <postscript><p>Eine grueß von meiner lieben frau <rs type="person" key="A002061">schwegerin</rs>, die beyden bilder schickt <persName key="A002068">Carlgen</persName> dem lieben <rs type="person" key="A000226">großvater</rs>.</p></postscript>
+         </div>
+         <anchor xml:id="genovefa_end"/>
+         <addSpan hand="#cmvweber" spanTo="#cmvweber_end"/>
+         <div type="writingSession" n="3">
+            <p><note xml:id="tC_01" type="textConst" resp="PS">Fortsetzung von <persName key="A002068">Carl Maria von Weber</persName>:</note></p>
+            <p>Liebster <rs type="person" key="A000226">GrosVater</rs>!<lb/>Wenn sie sich recht <add place="above">wohl</add> Befinden, so wird es mich Hertzlich freuen, ich küße Ihre Hand und bin bis in Todt</p><closer><seg rend="right">Ihr<lb/>Getreuer Sohn<lb/><persName key="A002068">Carl von Weber</persName></seg><dateline><settlement key="A130088">Anspach</settlement> d 21<hi rend="superscript">ten</hi><lb/>Febr: <hi rend="underline" n="1">1793</hi>.</dateline></closer>
+         </div>
+         <anchor xml:id="cmvweber_end"/>
+         <addSpan hand="#favweber" spanTo="#favweber_end2"/>
+         <div type="writingSession" n="4">
+            <p><note xml:id="tC_02" type="textConst" resp="PS">Nachschrift von <persName key="A002074">Franz Anton von Weber</persName>:</note></p><p>Meine adreße ist so.<lb/>an Herrn <hi rend="latintype">von Weber Director</hi><lb/><hi rend="underline">in</hi><lb/><settlement key="A130088"><hi rend="underline" n="1">Anspach</hi></settlement></p>
+         </div>            
+         <anchor xml:id="favweber_end2"/>
+      </body>
+   </text>
+</TEI>

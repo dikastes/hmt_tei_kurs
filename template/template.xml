@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">##Seminartitel</title>
+                <title level="a">##Brieftitel</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Christoph Hust</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>##Studi-Name</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>Hochschule für Musik und Theater &quot;Felix Mendelssohn-Bartholdy&quot; Leipzig</name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>##Aufbewahrungsort</settlement>
+                        <repository>##Aufbewahrungsinstitution</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!-- Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="##JJJJ-MM-DD">##Sendedatum</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="##Empfänger" ref="##GND-ID">##Empfänger</persName>
+                    <date when="##JJJJ-MM-DD">##Empfangsdatum</date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="de">German</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!-- Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) -->
+        <body>
+            <div>
+                <opener>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-opener.html
+                </opener>
+                <p>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html
+                </p>
+                <closer>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html
+                </closer>
+                <!-- 
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>
+

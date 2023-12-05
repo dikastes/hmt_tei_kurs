@@ -31,6 +31,8 @@ class: middle
 
 - Namenskonflikte und Namespaces
 - DTD
+- Oxygen installieren
+- TEI-Beispiele
 
 ---
 
