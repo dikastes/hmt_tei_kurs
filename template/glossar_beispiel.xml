@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">##Seminartitel</title>
+                <title level="a">##Brieftitel</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>
+                        Matthias Richter
+                        <email>matthias.richter@slub-dresden.de</email>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>Hochschule für Musik und Theater &quot;Felix Mendelssohn-Bartholdy&quot; Leipzig</name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>##Aufbewahrungsort</settlement>
+                        <repository>##Aufbewahrungsinstitution</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!-- Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="##Empfänger" ref="##GND-ID">##Empfänger</persName>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="de">German</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!-- Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) -->
+        <body>
+            <div>
+                <opener>
+                    <!-- eine Adresse ... -->
+                    <address>
+                        <!-- besteht aus mehreren Adresszeilen -->
+                        <addrLine>Max Mustermann</addrLine>
+                        <addrLine>Musterstraße 4</addrLine>
+                        <addrLine>03030 <settlement key="Leipzig" ref="https://d-nb.info/gnd/musterhausen">Musterhausen</settlement></addrLine>
+                    </address>
+                    <salute>Lieber <persName key="Mustermann, Max" ref="https://d-nb.info/gnd/maxmustermann">Max</persName>,</salute>
+                </opener>
+                <p>
+                    In diesem Absatz schreibe ich Ihnen einen mehrseitigen Brief.
+                    <!-- hier sind 2 Wörter unlesbar -->
+                    Manchmal kann man <unclear quantity="2" unit="word" /> nicht lesen.
+                    Manchmal erkennt <choice><sic cert="high">mah</sic><sic cert="low">mai</sic><corr>man</corr></choice>
+                    aber eine oder mehrere Varianten eines Wortes. Diese Varianten werden in sic-Elementen innerhalb
+                    eines choice-Elements notiert. Die sic-Elemente erhalten ein cert-Attribut, das angibt, wie sicher die
+                    jeweilige Lesart ist. Schließlich kann das vermutlich gemeinte Wort in einem corr-Element angegeben werden.
+                    <!-- hier gibt es einen Zeilenumbruch im Satz -->
+                    Plötzlich <lb/> endet der Platz und ich schreibe von vorn los.
+                    <!-- hier beginnt mitten im Satz eine neue Seite -->
+                    Wenn die Seite endet, <pb/> muss man eben auf der nächsten weiterschreiben.
+                    <!-- hier gibt es hochgestellte und unterstrichene Passagen -->
+                    Wir trafen uns am 3<hi rend="superscript">ten</hi> September in <hi rend="underline">Leipzig</hi>
+                    <!-- mehrfache Unterstreichungen -->
+                    Durch <hi rend="underline">mehrfache<hi rend="underline">Anwendung</hi>von</hi>Underline lässt ich sehr
+                    <hi rend="underline"><hi rend="underline"><hi rend="underline">flexibel</hi></hi></hi> darstellen,
+                    unter welchem Wort wie viele Striche sind.
+                    <!-- Durchstreichungen und Ersetzungen -->
+                    Hier haben wir ein <del rend="overstrike">Mord</del><add place="above">Wort</add> ersetzt, indem wir
+                    durchstreichen und darüber korrigieren.
+                    <!-- Einfügungen -->
+                    Einfügungen werden genau wie Ersetzungen in einem &lt;add&gt;-Element notiert.
+                    <add place="margin">Dieser eingefügte Satz wird im Seitenrand notiert.</add>
+                    <add place="top">Dieser Satz wird am Anfang der Seite notiert.</add>
+                    <add place="bottom">Dieser Satz wird am Ende der seite notiert.</add>
+                    <add place="inline">Dieser Satz ist zwischen die Textzeilen gequetscht.</add>
+                    <add place="end">Dieser Satz wird am Briefende aufgeschrieben.</add>
+                    <!-- Abkürzungen -->
+                    Grundsätzlich werden <choice><abbr>Abk.</abbr><expan>Abkürzungen</expan></choice> so notiert,
+                    dass innerhalb eines choice-Elements die Abkürzung und die expandierte Version aufgeschrieben werden.
+                    <!-- would/could -->
+                    I <choice><abbr>w_<hi rend="above">d</hi></abbr><expan>would</expan></choice> like to suggest to
+                    encode Ethel&apos;s abbreviations like this.    
+                    <!-- Klammern -->
+                    (Der TEI-Standard definiert keine eigenen Elemente für runde Klammern.) Diese können normal als Zeichen
+                    benutzt werden.
+                </p>
+                <!-- 
+                    Bilder werden ohne sehr genaue Angabe ihrer Platzierung innerhalb eines figure-Elementes festgehalten.
+                    Sie können textlich durch head- und p-Elemente ergänzt werden. Sie können in einem figDesc-Element
+                    beschrieben werden. Falls ein Bild im Internet verfügbar ist, kann es in einem graphic-Element referenziert
+                    werden.
+                -->
+                <figure>
+                    <head>Ein Titel am Bild</head>
+                    <figDesc>Die Beschreibung des Bildes</figDesc>
+                    <p>Ein Absatz am Bild</p>
+                    <graphic url="https://path.to/picture.png"/>
+                </figure>
+                <!-- umfangreichere Einfügungen -->
+                <addSpan spanTo="#span1" place="end"/>
+                <p>
+                    Der Beginn einer längeren Einfügung wird mit addSpan notiert.
+                    Dieses leere Element trägt ein place-Attribut genau wie add.
+                    Außerdem erhält es ein spanTo-Attribut, das als Wert den ID eines anchor-Elementes erhält.
+                    Werden XML-IDs auf diese Art aufgerufen, wird vor ihnen eine Raute notiert.
+                    Ein Anchor-Element markiert das Ende der umfangreichen Einfügung.
+                    Hier wird die XML-ID in einem xml:id-Attribut deklariert.
+                    Die Deklaration erfolgt ohne Raute.
+                </p>
+                <anchor xml:id="span1"/>
+                <closer>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html
+                </closer>
+                <!-- 
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>
+
+
