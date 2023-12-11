@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth Seminar</title>
+                <title level="a"> Letter 16, Christmas 1877-12-21</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Christoph Hust</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Noa Flach</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>Hochschule für Musik und Theater &quot;Felix Mendelssohn-Bartholdy&quot; Leipzig</name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Bibliothek und Archiv Hmt Leipzig</settlement>
+                        <repository>HMT Leipzig</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!-- Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="1877-12-21"></date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Nina Smyth" ref="##GND-ID"></persName>
+                    <date when="1877-12-21"></date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en"></language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!-- Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) -->
+        <body>
+            <div hand="Smyth,Ethel"> <!-- Hand, die den Brief geschrieben hat -->
+                <opener>
+                    <adress></adress>
+                    <note><before rend="underline"></before> Xmas 77<unclear quantity="1" unit="word"></unclear><add place="top"></add></note> <!-- Mit Bleistift  -->
+                    <date>Saturday.</date>
+                    <salute> My own darling <persName>Mother</persName></salute>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-opener.html
+                </opener>
+                <p> <!-- paragraph ohne Nummerierung, wenn Nummerierung dann p n=x -->
+                    <pb/>I have written in 
+                    <lb></lb>all 12 Xmas letters! (<unclear quantity="1" unit="word"></unclear> home people!)
+                    <lb></lb> & now as a bonne bouche write my letter 
+                    <lb></lb>to you. Mother darling I wish you knew how 
+                    <lb></lb>much I am thinking of you all – I don’t 
+                    <lb></lb><choice><sic cert="high">think </sic></choice> you’ve been out of my thoughts 
+                    <lb></lb>one hour ever since the Xmas season came 
+                    <lb></lb>in - & as the Xmas day draws near I feel 
+                    <lb></lb>more & more the many miles there are 
+                    <lb></lb>between us – A very very happy Xmas 
+                    <lb></lb>to you Mother darling and a bright New 
+                    <lb></lb>Year – Your dear note <choice><sic cert="medium">announced</sic></choice> the 
+                    <lb></lb><del rend="overstrike">arrival</del><add place="above">dispatch</add> of the box <hi rend="underline">just</hi> arrived. I 
+                    <lb></lb>will lett <persName cert="low">Frau B.</persName> that you <choice><abbr>w</abbr><expan>will</expan></choice> ? Earlier I 
+                    <lb></lb>did not go décolletée and I’m sure 
+                    <lb></lb>there‘ll be no difficulty about it. 
+                    <lb></lb>The beautiful white dress will do 
+                    <lb></lb>for <persName>Baroness Tauchnitz</persName> grand party on 
+                    <lb></lb>the <date>14th</date>. It sounds much too good 
+                    <lb></lb>for a ball & certainly shall not be worn 
+                    <lb></lb>at one. And now I must for <unclear quantity="1" unit="word"></unclear>
+                    <lb></lb>plunge into what I think will please 
+                    <lb></lb>Papa immensely. Some time ago I found 
+                    <lb></lb>out that a good many <unclear cert="high">Conservatorists</unclear>
+                    <lb></lb>who have <hi rend="underline">excellent</hi> food & a room 
+                    <lb></lb>five times the size of mine – also <hi rend="underline">not</hi> 
+                    <lb></lb><unclear quantity="1" ></unclear> 3 <unclear quantity="2" cert="medium">pair upstairs</unclear>are paying <num>28</num> 
+                    
+                    <pb/>
+                    <lb></lb>Thaler a month – <choice><abbr>i.e.</abbr><expan>that is to say</expan></choice> <choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>4.2</num> a month
+                    <lb></lb>– <num>50.4.0</num> per annum – whereas I 
+                    <lb></lb>pay as you know <num>40</num> Thalers – <choice><abbr>i.e.</abbr><expan>that is to say</expan></choice> 
+                    <lb></lb></choice> <choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>6</num> a month (rather more as a fact) 
+                    <lb></lb>& </choice> <choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>75</num> a year!! I didn’t <unclear cert="medium">wate</unclear> about 
+                    <lb></lb>it at once as I thought the quarter
+                    <lb></lb>having been paid on advance I’d better 
+                    <lb></lb>make all enquiries first at all 
+                    <lb></lb>events secure <del rend="overstrike">two</del><add place="above"><num>3</num></add> points – that 
+                    <lb></lb><persName>Mr Burnaud</persName> leaves in <date cert="low">Feb 3</date> – not that 
+                    <lb></lb>I get the <persName>Frau Prof’s</persName> drawing room 
+                    <lb></lb>a very decent room – yet dear at 
+                    <lb></lb>the price – that she promises & 
+                    <lb></lb>have no more gentlemen un <unclear cert="low">peu-</unclear>
+                    <lb></lb><unclear cert="low">loin</unclear> – as here it is <hi rend="underline">not</hi> <hi rend="underline">conveneable</hi>.
+                    <lb></lb>Well – <persName>Mr. Burnaud</persName> is <del rend="overstrike">also</del> <unclear quantity="1"><unit>word</unit></unclear>
+                    <lb></lb>-who like us – knew nothing of <unclear cert="medium">her</unclear> –
+                    <lb></lb>man rater – pays also <choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>75</num> a year
+                    <lb></lb>& grunbles not thereat – If I de-
+                    <lb></lb>parted in Feb-3 <persName>Mr. B</persName> <choice><abbr>w°</abbr><expan>would</expan></choice> stay on 
+                    <lb></lb>half a year for certain – so all things
+                    <lb></lb>considered the <persName>Frau Prof</persName> – who <unclear cert="low"><unit>word</unit></unclear>
+                    <lb></lb>a dear old thing so but human &
+                    <lb></lb>naturally wishes to get as much from
+                    <lb></lb>people as she can (small blame to her)
+                    <lb></lb><persName>Frau Prof</persName>considered it a better
+                    <lb></lb> <unclear quantity="1"><unit>word</unit></unclear>to keep him – so with
+                    
+                    <pb/>
+                    <lb></lb><hi rend="underline">real</hi> regrets on both sides we decided
+                    <lb></lb>it <choice><abbr>w'</abbr><expan>will</expan></choice> be better that I leave on the <date>1st</date>.
+                    <lb></lb>I happened to mention to my piano
+                    <lb></lb>master that I was leaving (all
+                    <lb></lb>happened yesterday) & he instantly 
+                    <lb></lb>recommended a mother that he knows
+                    <lb></lb>very well – I said <quote>„is it very <unclear quantity="1"><unit>word</unit></unclear>“</quote>
+                    <lb></lb><quote>„The usual thing“</quote> he said <quote>“20 Thaler!!”</quote>
+                    <lb></lb><quote>“a month!!!”</quote> – He said my paying 
+                    <lb></lb><num>40</num> for my room <unclear cert="low">dere</unclear> was a <hi rend="underline">fearful</hi>
+                    <lb></lb>swindle!! I instantly went to the 
+                    <lb></lb>pension – It is in the nicest part 
+                    <lb></lb>of <placeName>Leipzig</placeName> – part oft he big <placeName>Augustus
+                        <lb></lb>Platz</placeName> – <num>2</num> houses from a <unclear quantity="1"><unit>word</unit></unclear> of
+                    <lb></lb><persName>Frau Brockhaus</persName> - & <num>2</num> streets from 
+                    <lb></lb><persName cert="low">Frau B Lenself</persName>!. I liked the <unclear cert="medium">Frau</unclear> &
+                    <lb></lb>her wife <hi rend="underline">tremendously</hi> & also the 
+                    <lb></lb>room I <choice><abbr>sh°</abbr><expan>shall</expan></choice> – They have no 
+                    <lb></lb>gentlemen pensionated & no musical
+                    <lb></lb>pensionats – <persName>Frau Brockhaus</persName> will
+                    <lb></lb>come with me & look at it all next
+                    <lb></lb>week & if the <unclear quantity="2"><unit>word</unit></unclear> desirable I’d
+                    <lb></lb>better close - You see here I pay
+                    <lb></lb><choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>6.5</num> a month. There <choice><abbr>₤</abbr><expan>Pound</expan></choice><num>4.14</num> so 
+                    <lb></lb>that will be a difference of <choice><abbr>₤</abbr><expan>Pound</expan></choice> <num>1.11</num>
+                    <lb></lb>a month. & for the <num>6</num> months I shall
+                    <lb></lb>be here before coming home (as a matter
+                    <lb></lb>of fact it will be less of course)
+                    
+                    <pb/>
+                    ...
+                    
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html
+                </p>
+                <closer>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html
+                </closer>
+                <!-- 
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>
+

@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth und ihre Netzwerke</title>
+                <title level="a">Brief 11 1878-10-08</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>
+                        Peiyao Ma
+                        <email>pm83jija@stud.hmt-leipzig.de</email>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>HMT Bibiothek</settlement>
+                        <repository>HMT Bibiothek</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Smyth, Nina" ref="https://d-nb.info/gnd/Ninasymth">Symth,Nina</persName>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">Englisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div>
+                <opener>
+                    <!-- Salonmonats 19... -->
+                    <address>
+                        <addrLine>June 7 (June 7/78 Friday night)</addrLine>
+                    </address>
+                    <salute>My own darling Mother</salute>
+                </opener>
+                <p>
+                    <lb/>
+                    My own darling Mother I had finished
+                    <lb/>
+                    my abendbrot and was feeling dispirited to
+                    <lb/>
+                    do anything in particular except look at
+                    <lb/>
+                    the sunset when your dear letter ar-
+                    <lb/>
+                    rives. After reading which, I have a
+                    <lb/>
+                    special wish for Norite Vzon at once! I
+                    <lb/>
+                    will send on your note to Frau.
+                    <lb/>
+                    <choice>
+                        <abbr>He.</abbr>
+                        <expan>Herzogenberg, Elisabeth von</expan>
+                    </choice>
+                    <persName key="Herzogenberg, Elisabeth von" ref="https://d-nb.info/gnd/124263690">He</persName>
+                    , who is far away in Bohemia, will
+                    <lb/>
+                    be so glad I have it. She was always
+                    <lb/>
+                    saying, especially while cooking somet-
+                    <lb/>
+                    hing for me, '
+                    <hi rend="superscript">What</hi>
+                    a face it would be if
+                    <lb/>
+                    your mother were to walk in suddenly,'
+                    <lb/>
+                    except that I fear I should not be
+                    <lb/>
+                    ” here in her place then！“which she
+                    <lb/>
+                    certainly would not have been. I now
+                    <lb/>
+                    go over to Frau Doctor generally about
+                    <lb/>
+                    to munch and eat ya Mittag,
+                    <lb/>
+                    and here (she says)
+                    <del rend="overstrike">ein satz</del>
+                    <add place="above">I</add>
+                    generally better
+                    <lb/>
+                    food there than here, which is true
+                    <lb/>
+                    — but that here is quite good enough,
+                    <lb/>
+                    and I have a good appetite). I mean
+                    <lb/>
+                    stay there all afternoon until about 6 or 7,
+                    <hi rend="superscript">quite alone</hi>
+                    ） in her boudoir
+                    <lb/>
+                    or on the verandah, or else without
+                    <lb/>
+                    Frau Doctor, for I am not yet allowed
+                    <lb/>
+                    to see people. For, as the Doctor says,
+                    <lb/>
+                    if one receives one or two, one must receive all, and one can't say Done. „
+                    <pb/>
+                    May come in - you don't excite me at all.
+                    <lb/>
+                    I said to another, 'You mayn't come in
+                    <lb/>
+                    You
+                    <hi rend="superscript">do</hi>
+                    excite me „ therefore, on
+                    <hi rend="superscript">must</hi>
+                    <lb/>
+                    say no at all—except on or two choice
+                    <lb/>
+                    spirits who are smuggled in for 1/2 an
+                    <lb/>
+                    hour with the greatest secrecy, and
+                    <lb/>
+                    upon whom absolute silence is
+                    <lb/>
+                    imposed! For instance,
+                    <add place="inline">my</add>
+                    dear
+                    <persName key="Röntgen, Engelbert" ref="https://d-nb.info/gnd/116583681">Dr.Röntgen</persName>
+                    <lb/>
+                    who with his sister came and bid me
+                    <lb/>
+                    goodbye - as he is off (all the time I
+                    <lb/>
+                    am away, luckily), and a niece of
+                    <lb/>
+                    the Emperor, whose children he is
+                    <lb/>
+                    to give music lessons. He's a vio-
+                    <lb/>
+                    lin virtuoso, also composes, and
+                    <lb/>
+                    since I have been ill, has com-
+                    <lb/>
+                    posed 3 lovely little pieces dedi-
+                    <lb/>
+                    cated to me and suited, as he rather
+                    <lb/>
+                    wickedly says — to my technik!!/i.s.
+                    <lb/>
+                    not difficult. He is writing Thema
+                    <lb/>
+                    out for me - also,
+                    <persName key="Herzogenberg Elisabeth von" ref="https://d-nb.info/gnd/124263690">Frau Herzogenberg</persName>
+                    's piano setting of the new
+                    <lb/>
+                    <persName key="Brahms, Johannes" ref="https://d-nb.info/gnd/118514253">Brahms</persName>
+                    Symphony - but I haven’t
+                    <lb/>
+                    got them yet, and I can't let you, Mo-
+                    <lb/>
+                    ther darling, know how impatient I am
+                    <lb/>
+                    to be off, and that very impatience hin-
+                    <lb/>
+                    ders my departure - as it increases
+                    <lb/>
+                    the heart action! My pulse is
+                    <lb/>
+                    all day over 100 and not always steady—So, as you may imagine,
+                    <lb/>
+                    I have to take care. People
+                    <hi rend="superscript">are</hi>
+                    <pb/>
+                    so kind to me - were the
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                    <lb/>
+                    sweet old ladies who have been
+                    <lb/>
+                    kind to me and asked me to their
+                    <lb/>
+                    houses (to whom next year I must
+                    <lb/>
+                    ruthlessly forsake). They climb up
+                    <lb/>
+                    my 2 pianos of stairs, inquire,
+                    <lb/>
+                    and leave roses, ice, biscuits, and
+                    <lb/>
+                    notes—My room is overflowing with
+                    <lb/>
+                    flowers, and the two sweetest
+                    <lb/>
+                    of the bourgeois sweets here,
+                    <lb/>
+                    Limburgers and Danzich who
+                    <lb/>
+                    have already
+                    <del rend="overstrike">ein Wort</del>
+                    <add place="above">retired</add>
+                    to their
+                    <lb/>
+                    several seats a few miles
+                    <lb/>
+                    out of
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                    — send me ser-
+                    <lb/>
+                    vants with flowers and notes of in-
+                    <lb/>
+                    quiry. Isn't it touching of them!
+                    <lb/>
+                    And the melancholy thing is that I shan't be able to go and thank
+                    <lb/>
+                    them, as I have to save myself
+                    <lb/>
+                    for the journey and take things very
+                    <lb/>
+                    easily. I take about 1/4 of an hour
+                    <lb/>
+                    to get up the stairs, and I arrive more
+                    <lb/>
+                    dead than alive at the top…..
+                    <lb/>
+                    Quite like
+                    <persName key="Herzogenberg, Elisabeth von" ref="https://d-nb.info/gnd/124263690">Dr.V.He</persName>
+                    ? But,
+                    <lb/>
+                    unlike her — and quite good on
+                    <lb/>
+                    level ground! Oh, Mother, I
+                    <lb/>
+                    hope the rules may be a little
+                    <lb/>
+                    relaxed! But the worst of it is
+                    <lb/>
+                    I have promised my dear foreman Doctor,
+                    <pb/>
+                    on my word of honor, signed a
+                    <lb/>
+                    paper to that effect, which I must
+                    <lb/>
+                    show you when I get home. And unless
+                    <lb/>
+                    he absolves me, I fear I can't. But
+                    <lb/>
+                    we will see, and I will hope on. Other-
+                    <lb/>
+                    wise, I often suddenly burst out
+                    <lb/>
+                    into vehement howling at the
+                    <lb/>
+                    bare idea of it, as I know my years
+                    <lb/>
+                    of devotion to the Muses has
+                    <hi rend="superscript">not</hi>
+                    <lb/>
+                    affected my love for field sports,
+                    <lb/>
+                    to which I
+                    <hi rend="superscript">know</hi>
+                    I have just as
+                    <lb/>
+                    I’ll see the lawn tennis net
+                    <lb/>
+                    for Captain Smith
+                    <persName key="Smyth,John" ref="https://d-nb.info/gnd/JohnSmyth">Captain Smith</persName>
+                    's benefit once more
+                    <lb/>
+                    before I leave home again.
+                    <lb/>
+                    You would be so amused if you saw
+                    <lb/>
+                    me
+                    <hi rend="superscript">cooking</hi>
+                    .
+                    <persName key="Herzogenberg Elisabeth von" ref="https://d-nb.info/gnd/124263690">Dr. Frau Herz</persName>
+                    taught
+                    <lb/>
+                    me (or rather, I taught myself
+                    <lb/>
+                    by watching her), and now very
+                    <lb/>
+                    often, if I feel disposed there to
+                    <lb/>
+                    send for cold meat, and on a little
+                    <lb/>
+                    spirit lamp apparatus that she
+                    <lb/>
+                    has lent me, I dish up all sorts of
+                    <lb/>
+                    messes - fry potatoes , and goodness
+                    <lb/>
+                    knows what else- Once or twice, I
+                    <lb/>
+                    have sent for 1/2 a pounds of beefsteak
+                    <lb/>
+                    or undercut (8½ - the ½ lb)
+                    <pb/>
+                    <add place="top">2）</add>
+                    and have cooked
+                    <hi rend="superscript">that</hi>
+                    as a sort
+                    <lb/>
+                    of treat – being an anomaly. The
+                    <lb/>
+                    unpleasant part
+                    <add place="inline">is</add>
+                    preparing the
+                    <lb/>
+                    raw meat for the cooking, +
+                    <lb/>
+                    <persName key="Crawford Nancy" ref="https://d-nb.info/gnd/NancyCrawford">Nacy</persName>
+                    , who was also
+                    <lb/>
+                    not brought up to that sort of thing,
+                    <lb/>
+                    is much astonished
+                    <hi rend="superscript">are</hi>
+                    my being
+                    <lb/>
+                    able to stomach it! But
+                    <lb/>
+                    one does get over the feeling,
+                    <lb/>
+                    + then I am in all much more
+                    <lb/>
+                    of a nationalized German now.
+                    <lb/>
+                    <persName key="Crawford Nancy" ref="https://d-nb.info/gnd/NancyCrawford">Nacy</persName>
+                    , who actually won't eat
+                    <lb/>
+                    sausages
+                    <hi rend="superscript">because</hi>
+                    quite alone the pigs weren’t
+                    <lb/>
+                    brought up in her own pigsty!
+                    <lb/>
+                    Did one ever hear of anything so
+                    <lb/>
+                    absurd in Germany! It is won-
+                    <lb/>
+                    derful how good the food tastes
+                    <lb/>
+                    when one has removed the traces
+                    <lb/>
+                    of the kitchen and deposited them
+                    <lb/>
+                    on my small box outside the door,
+                    <lb/>
+                    donned one's looking apron (a towel
+                    <lb/>
+                    tied around the waist!)
+                    <lb/>
+                    donned one's cap— and buckles to
+                    <lb/>
+                    I flatter myself I cook such a casserole
+                    <lb/>
+                    as never was - (but whether I
+                    <lb/>
+                    can cook it in any other pot but
+                    <lb/>
+                    <persName key="Herzogenberg Elisabeth von" ref="https://d-nb.info/gnd/124263690">Frau Herz</persName>
+                    's, which I must send her
+                    <lb/>
+                    back soon, and in which I know the
+                    <pb/>
+                    Proportions of sugar, milk, and cocoa,
+                    <lb/>
+                    and a hair – remains to be proved at
+                    <lb/>
+                    Fernhurst when I first cook the
+                    <lb/>
+                    brew at breakfast at the table
+                    <lb/>
+                    in the window among the old books
+                    <lb/>
+                    and well
+                    <hi rend="superscript">behind</hi>
+                    the hot things!!!
+                    <lb/>
+                    To joys - thought I don't know how
+                    <lb/>
+                    to wait till the time comes! Could
+                    <lb/>
+                    n’t you get the School piano, mother
+                    <lb/>
+                    darling, for me to practice on?
+                    <lb/>
+                    I think the
+                    <del rend="overstrike">ein Wort</del>
+                    <add place="above">diningroom</add>
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    be
+                    <lb/>
+                    the best place, as I
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    like to
+                    <lb/>
+                    get my practicing over in the
+                    <lb/>
+                    morning, + there I wouldn't disturb
+                    <lb/>
+                    others - you in particular less
+                    <lb/>
+                    than in the green room, where
+                    <lb/>
+                    poor Papa will have a fine time
+                    <lb/>
+                    of
+                    <add place="inline">it</add>
+                    between two fires above and below!!
+                    <lb/>
+                    I am in terror about the Convention.
+                    <lb/>
+                    The doctor laughed at my idea
+                    <lb/>
+                    of pottering about in the town and said I
+                    <lb/>
+                    shouldn't think of it. And I
+                    <lb/>
+                    hardly like to trust the matter to
+                    <lb/>
+                    anyone else. That for Nina and
+                    <lb/>
+                    Violet, I have (at least the
+                    <lb/>
+                    big one between them both).
+                    <lb/>
+                    <del rend="overstrike">ein Wort</del>
+                    <add place="above">I</add>
+                    am not able to get them
+                    <pb/>
+                    before I go I shall be in despair
+                    <lb/>
+                    It
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    be such a fine thing, and not 1/2 so much sending love to the Auturin, wh-
+                    <lb/>
+                    ose course I shorten somewhat. （I
+                    <lb/>
+                    have just, in drinking lemonade,
+                    <lb/>
+                    swallowed a lemon pip, and do hope
+                    <lb/>
+                    I shan't be a practical illustration of
+                    <lb/>
+                    "Barnet Du d'or Soned no Via Litronne bhigan?" for
+                    <lb/>
+                    the edification of Miss Litte by the
+                    <lb/>
+                    time I get home. Do tell that when I am in England
+                    <lb/>
+                    shall be so glad I have to
+                    <lb/>
+                    remind me of dear dear Germany
+                    <lb/>
+                    — and I hope she will let me talk
+                    <lb/>
+                    German with her sometimes - That I
+                    <lb/>
+                    may not quite forget it when there!
+                    <lb/>
+                    though I know what a trial it is to
+                    <lb/>
+                    have foreigners talking one's own
+                    <lb/>
+                    language with one - when one is
+                    <lb/>
+                    perfect mistress of the language
+                    <lb/>
+                    of the country one is in.
+                    <choice>
+                        <abbr>tho'</abbr>
+                        <expan>Though</expan>
+                    </choice>
+                    not
+                    <lb/>
+                    perfect mistress of German by
+                    <lb/>
+                    any means I can of course talk
+                    <lb/>
+                    it as fast as I like, and nothing annoys
+                    <lb/>
+                    me so intensely as when people
+                    <lb/>
+                    insist upon talking
+                    <add place="inline">bad</add>
+                    English with
+                    <lb/>
+                    me
+                    <del rend="overstrike">ein Wort</del>
+                    <add place="above">in Germany</add>
+                    <hi rend="superscript">in Germany</hi>
+                    .
+                    <lb/>
+                    still perhaps tell Little will
+                    <lb/>
+                    talk German with
+                    <add place="inline">me</add>
+                    out of good nature. It is too absurd
+                    <lb/>
+                    Lone I have forgotten English
+                    <lb/>
+                    a haps you notice in my letters how
+                    <lb/>
+                    fagged & unflowing my style has
+                    <lb/>
+                    become & I who, as translator
+                    <lb/>
+                    used to have a tolerably good com-
+                    <lb/>
+                    mand of English, as one
+                    <hi rend="superscript">must</hi>
+                    have
+                    <lb/>
+                    if one translates, often searching
+                    <lb/>
+                    for a word such as "imposes upon it or analogy"
+                    <lb/>
+                    for 1/2 an hour &they have to search it out in a
+                    <hi rend="superscript">German</hi>
+                    <pb/>
+                    Dictionary!! This will show you
+                    <lb/>
+                    that I have actually drunk in Ger-
+                    <lb/>
+                    man very often- Though I have
+                    <lb/>
+                    not given up my
+                    <del rend="overstrike">ein Wort</del>
+                    <add place="above">habit</add>
+                    of
+                    <lb/>
+                    talking aloud to myself, when
+                    <lb/>
+                    alone at home, now always in German
+                    <lb/>
+                    (which must be most edifying
+                    <lb/>
+                    possible for the maid concealed
+                    <lb/>
+                    under the bed & elsewhere！）
+                    <lb/>
+                    But one absurd thing is that
+                    <lb/>
+                    all the time Grace &Kerrigan
+                    <lb/>
+                    were with whom I always talk
+                    <lb/>
+                    English - at least generally- as
+                    <lb/>
+                    her accent is almost impercep-
+                    <lb/>
+                    tible) was here . I could hardly
+                    <lb/>
+                    speak German
+                    <hi rend="superscript">at all</hi>
+                    with other
+                    <lb/>
+                    people & I ran Brockhaus
+                    <pb/>
+                    to whom I went the day after how
+                    <lb/>
+                    life was much amused at
+                    <lb/>
+                    finding I couldn't speak Germany
+                    <lb/>
+                    -and as I told you I have forgotten
+                    <lb/>
+                    French
+                    <hi rend="superscript">fearfully</hi>
+                    we really
+                    <hi rend="superscript">must</hi>
+                    <lb/>
+                    speak it together - only I
+                    <hi rend="superscript">can't</hi>
+                    <lb/>
+                    say "shut the door" in French
+                    <lb/>
+                    now hardly!!) I shall speak
+                    <lb/>
+                    German on the Journey with Miss
+                    <lb/>
+                    Crawford & Renire I shall have
+                    <lb/>
+                    quite forgotten it by the time I
+                    <lb/>
+                    get home!! I am so dying to see
+                    <lb/>
+                    Kitty - she
+                    <hi rend="superscript">must</hi>
+                    be verycomic in-
+                    <lb/>
+                    deed at + jolly that Mary
+                    <lb/>
+                    Co will be there! Thank the dear girl
+                    <lb/>
+                    for her letter
+                    <hi rend="superscript">most</hi>
+                    heartily-- I
+                    <lb/>
+                    always thought of Nina manages
+                    <lb/>
+                    her breath better the organ is
+                    <lb/>
+                    very good & so true - By me by
+                    <lb/>
+                    about the money Mother darling
+                    <lb/>
+                    The bills for ball dress- making
+                    <lb/>
+                    of Baisin de Corset with silk-
+                    <lb/>
+                    extra - green stuff dress new silk
+                    <lb/>
+                    putting in order of it & grey - &
+                    <lb/>
+                    altering my lovely yellow dress a little came to about £8 - or
+                    <lb/>
+                    £8 10. but I have enough to
+                    <lb/>
+                    cover that or £10 80 £5 white
+                    <pb/>
+                    legate I shall want for it
+                    <lb/>
+                    Just imagine - I need not have
+                    <lb/>
+                    <del rend="overstrike">of my own!!</del>
+                    <add place="above">had</add>
+                    ）
+                    <lb/>
+                    and bills but for to miss.（
+                    <del rend="overstrike">ein Satz</del>
+                    <lb/>
+                    I always of my deal always paid a
+                    <lb/>
+                    month before hand & in such case
+                    <lb/>
+                    one generally gives notice a month before –
+                    <lb/>
+                    well as I at the beginning
+                    <lb/>
+                    of the month had the full intentions
+                    <lb/>
+                    of staying till July 18th of course I
+                    <lb/>
+                    gave no notice - till after I
+                    <lb/>
+                    was ill + the doctor said I
+                    <lb/>
+                    had better go - But if you believe
+                    <lb/>
+                    it the woman has the face and
+                    <lb/>
+                    ask £5
+                    <del rend="overstrike">for the month</del>
+                    <add place="above">June</add>
+                    ! I asked
+                    <lb/>
+                    Dr. Brockhaus
+                    <persName key="Brockhaus, Friedrich Arnold" ref="https://d-nb.info/gnd/119501201">Dr.Brockhaus</persName>
+                    that was right
+                    <lb/>
+                    of course said nothing to her about
+                    <lb/>
+                    it) and he says, that though
+                    <lb/>
+                    it is
+                    <hi rend="superscript">shamfull</hi>
+                    to ask for it
+                    <lb/>
+                    (Frau Heimbach
+                    <persName key="Heimbach">Frau Heimbach</persName>
+                    didn't) it is
+                    <lb/>
+                    legal so I supposed I shall
+                    <lb/>
+                    have to pay! That is Papa.-
+                    <lb/>
+                    That however I pay with the £5 I
+                    <lb/>
+                    had for the dresses. Thus remains
+                    <lb/>
+                    but to be paid these £5
+                    <lb/>
+                    a little over for parting tips
+                    <lb/>
+                    <add place="end">etc- say £1. and then also.</add>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

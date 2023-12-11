@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">Ethel Smyth an XYZ JJJJ-MM-TT</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Christoph Hust</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Clara-Josephine Staemmler</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Leipzig</settlement>
+                        <repository>Bibliothek der HMT Leipzig</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="##JJJJ-MM-DD">##Sendedatum</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="##Empfänger" ref="##GND-ID">##Empfänger</persName>
+                    <date when="##JJJJ-MM-DD">##Empfangsdatum</date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="de">German</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div>
+                <opener>
+                    My darling Mother,
+                </opener>
+                <p>
+                    <lb/>
+                    Just a little scrap
+                    <lb/>
+                    in Ninia’s letter I tell you -
+                    <unclear quantity="3" unit="word"/>
+                    -
+                    <lb/>
+                    staying in the house with Henschel so your
+                    <lb/>
+                    old Wildbad friend Herr von Roumanim!
+                    <lb/>
+                    He asked me if I had any relatives who
+                    <lb/>
+                    had been in Germany in ‘73 and
+                    <lb/>
+                    was so delighted to find out that you were
+                    <lb/>
+                    my mother of
+                    <unclear quantity="1" unit="word"/>
+                    . He
+                    <hi rend="underlined">raves</hi>
+                    about
+                    <lb/>
+                    Mary!! He is a pleasant man &
+                    <lb/>
+                    bade me remembers him most
+                    <lb/>
+                    kindly & respectfully & my Frau
+                    <lb/>
+                    Mutter &
+                    <hi rend="underlined">Fräulein</hi>
+                    Schwester! -
+                    <lb/>
+                    Also I was to tell you that now he wears
+                    <lb/>
+                    his hair
+                    <hi rend="underlined">long</hi>
+                    – not all cut short. As
+                    <lb/>
+                    when you knew him!!!!!
+                    <lb/>
+                    I have had several talks with
+                    <lb/>
+                    Hentschel about my music & am
+                    <lb/>
+                    most awfully happy about it.
+                    <lb/>
+                    He thinks more of my talent than
+                    <lb/>
+                    <hi rend="underlined">Even I did</hi>
+                    !! - & has written ab’
+                    <pb/>
+                    me to
+                    <hi rend="underlined">Brahms</hi>
+                    – (with whom he was
+                    <lb/>
+                    almost brought up) & Simrock. All
+                    <lb/>
+                    live in Berlin and he says I
+                    <lb/>
+                    shall be received with
+                    <unclear quantity="1" unit="word"/>
+                    .
+                    <lb/>
+                    It is so glorious to be told by
+                    <lb/>
+                    competent persons that ones future lies in ones own hands –
+                    <lb/>
+                    that the material for realizing
+                    <lb/>
+                    hopes I hardly ever – I think
+                    <lb/>
+                    <hi rend="underlined">never</hi>
+                    breathed at home even – is there – &
+                    <lb/>
+                    I have but to work
+                    <lb/>
+                    hard & steadily &
+                    <hi rend="underlined">not</hi>
+                    <hi rend="underlined">be</hi>
+                    <hi rend="underlined">too</hi>
+                    <lb/>
+                    <hi rend="underlined">soon</hi>
+                    <hi rend="underlined">pleased</hi>
+                    <hi rend="underlined">with</hi>
+                    <hi rend="underlined">myself</hi>
+                    .
+                    <lb/>
+                    Everyday I become more & more
+                    <lb/>
+                    convinced of the truth of my
+                    <lb/>
+                    old axiom –
+                    <lb/>
+                    that why no women
+                    <lb/>
+                    have become composers is because
+                    <pb/>
+                    <hi rend="underlined">they have married</hi>
+                    - & then very pro-
+                    <lb/>
+                    perly made their husband & children
+                    <lb/>
+                    the first consideration – So even if I were to fall desperately
+                    <hi rend="underlined">in love</hi>
+                    <lb/>
+                    with
+                    <hi rend="underlined">Brahms</hi>
+                    & he were to propose to
+                    <lb/>
+                    me –
+                    <hi rend="underlined">I'd</hi>
+                    <hi rend="underlined">say</hi>
+                    <hi rend="underlined">no</hi>
+                    !!!!! So fear not
+                    <lb/>
+                    that I shall marry in Germany!! -
+                    <lb/>
+                    I told Henschel my opinion and he
+                    <lb/>
+                    said that perhaps I was right but as he
+                    <lb/>
+                    himself has & I am told – an un-
+                    <lb/>
+                    glückliche Liebe on hand – I dont
+                    <lb/>
+                    think he’s a judge! He
+                    <hi rend="underlined">is</hi>
+                    so good to
+                    <lb/>
+                    me – corrects my songs for me (I
+                    <lb/>
+                    have composed lots more) – sets
+                    <lb/>
+                    me basses on which to construct
+                    <lb/>
+                    chorales & all sorts of things - & yet
+                    <lb/>
+                    I know if I were Henschel it would be
+                    <lb/>
+                    a great pleasure to me to get
+                    <lb/>
+                    hold of a new pupil to give a friendly shove on to – during a
+                    <unclear quantity="1" unit="word"/>
+                    do – nothing – stay in a little primitive town!!
+                    <lb/>
+                    Love Mother darling to the present goodbye –
+                    <lb/>
+                    I think of me always as very very happy - &
+                    <hi rend="underlined">o so</hi>
+                    well!!!!
+                </p>
+                <closer>
+                    Dear love to all at home from your most loving child, Ethel.
+                </closer>
+                <postscript>
+                    <p> </p>
+                </postscript>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>

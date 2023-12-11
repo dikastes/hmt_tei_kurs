@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">Ethel Smyth an Nina Emma Struth 1877-07-28</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Maria Bujanov</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>HMT Leipzig</settlement>
+                        <repository>HMT Bibliothek</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="1977-07-28">July 28th 77</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Struth, Nina Emma" ref="##GND-ID">Nina Emma Struth</persName>
+                    <date when="##JJJJ-MM-DD">##Empfangsdatum</date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!--Digitalisate -->
+    <facsimile>
+        <graphic url="=http://digital.slub-dresden.de/id505437279"/>
+    </facsimile>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div hand="Nachname, Vorname">
+                <opener>
+                    <hi rend="underlined">
+                        <hi rend="underlined">
+                            <hi rend="underlined">LEIPZIG!!</hi>
+                        </hi>
+                    </hi>
+                    <lb/>
+                    July 28th 77
+                    <lb/>
+                    Something Hotel. I didn’t catch the name. 11. am.
+                </opener>
+                <p>
+                    My darling Mother! All ideas are flown & I am mentally wallowing in one thought & one only i.e. "Here I am"!! And I have only just begun to realise that fact – For them we made a brave resolution and left Rotterdam at 4 p.m. yesterday travelling straight through to this place which we reached at 8.30 this morning! A good long spell of it! but we both slept like tops -
+                    <pb/>
+                    <choice>
+                        <abbr>Tho'</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    , that being the only fast train from Hanover, the carriage was too full to admit of lying down - Yet, I don’t even feel stiff! nor I believe does
+                    <persName key="Brewster, Henry B." ref="https://d-nb.info/gnd/131815202">Harry</persName>
+                    who probably will speak for himself ere I close
+                    <del rend="overstrike">There</del>
+                    this –
+                    <choice>
+                        <abbr>tho’</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    at present he is wandering about. Dear
+                    <persName key="Friedländer, Thekla" ref="http://d-nb.info/gnd/1170196608">Thekla</persName>
+                    met us at the station and we promised to be at her mother’s at 12. I will then get the aunt’s address and tell you what it is (if possible) in this letter or an the envelope.
+                    <persName key="Brewster, Henry B." ref="https://d-nb.info/gnd/131815202">Harry</persName>
+                    & I on our arrival here made elaborate toilettes & at down with gest to
+                    <pb/>
+                    Kaffee & Brödchen – (
+                    <choice>
+                        <abbr>Tho'</abbr>
+                        <expan>Although</expan>
+                    </choice>
+                    we had gone
+                    <choice>
+                        <abbr>thro’</abbr>
+                        <expan>through</expan>
+                    </choice>
+                    the same performance at ½ past 5 this morning at Magdeburg) & I have just come in from a prowl about town. Of course I at once repaired to the Conservatorium & gazed at that most gloomy edifice with feelings easier imagined than described,
+                    <choice>
+                        <abbr>tho’</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    somewhat modified by the fact that we were not "cock-sure"
+                    <hi rend="underlined">which</hi>
+                    of 7 or 8 gloomy
+                    <hi rend="strikethrough">buildings</hi>
+                    edifices in the block was actually
+                    <hi rend="underlined">
+                        <hi rend="underlined">the</hi>
+                    </hi>
+                    <hi rend="underlined">
+                        <hi rend="underlined">Conservatorium</hi>
+                    </hi>
+                    (as the latter joins the University & is much the same style of building). There were a good massy "Studenten" strolling about – with very
+                    <pb/>
+                    festive
+                    <del rend="overstrike">hats</del>
+                    <add place="above">caps</add>
+                    & less festive – not to say stodgy – casts of countenance. Most of them wear spectacles all wear trousers that bag at the knee - & not a few are decorated with interesting cuts on their faces. These latter swagger a good deal. I've then repaired to the public gardens where I saw what my eyes had often pictured to me – The masses of chains round little tables – the trees - & in the midst the raised orchestra with desks all around!!. I see Egmont is to be played tonight at the theatre. I wonder if we shall go.
+                    <persName key="Brewster, Henry B." ref="https://d-nb.info/gnd/131815202">Harry</persName>
+                    thinks it is time to repair to Leibnitzstrasse so I will close this for the present.
+                    <pb/>
+                    2)
+                    <lb/>
+                    <hi rend="underlined">Later</hi>
+                    <lb/>
+                    I find the post doesn’t go till 8.30 so can add the rest of my experiences so far. I went to the Friedländers & am charmed with them – one & all. The Frau seems a jolly cordial old person – &
+                    <persName key="Friedländer, Marie" ref="http://d-nb.info/gnd/1261898575">Marie</persName>
+                    the other sister a charming face & manner – both uglier
+                    <pb/>
+                    than
+                    <persName key="Friedländer, Thekla" ref="http://d-nb.info/gnd/1170196608">Thekla</persName>
+                    I think! She latter walked with
+                    <persName key="Brewster, Henry B." ref="https://d-nb.info/gnd/131815202">Harry</persName>
+                    & me to the aunt's – who is jolly too, & fat. Whereas my Frau is thin. There are three other lodges besides myself at the aunt’s & it will be fun I suspect as she doesn’t speak
+                    <hi rend="underlined">one</hi>
+                    <hi rend="underlined">word</hi>
+                    of English!! By the bye I must write down her address for I shall be there till Thursday next
+                    <pb/>
+                    <del rend="overstrike">bei Frau Heimbach</del>
+                    <lb/>
+                    <del rend="overstrike">Leipzig</del>
+                    <lb/>
+                    <del rend="overstrike">An der Pleisse</del>
+                    <lb/>
+                    <del rend="overstrike">3.a</del>
+                    <lb/>
+                    On second thoughts
+                    <choice>
+                        <abbr>tho’</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    if any letter arrives before Thursday at the Friedländers address it will be forwarded to me at the aunt’s (it’s only a 100 yards off) – if
+                    <hi rend="underlined">after</hi>
+                    Thursday (as I don’t yet know our address at the Thuringer Wald – besides
+                    <choice>
+                        <abbr>wh.</abbr>
+                        <expan>where</expan>
+                    </choice>
+                    we shall stop at Halle en route & not reach the J.W.
+                    <pb/>
+                    till Sat 7) The letter is sures to be forwarded from the Friedländers then from Fr. Heimbach's. So it
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    be better to write there. It’s hot here
+                    <choice>
+                        <abbr>tho’</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    there’s no sun & a few drops of rain have fallen. Sure one a foretaste of what it
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    be when the weather is bona fide
+                    <hi rend="underlined">hot!</hi>
+                    I suspect you will forward this to dear old Mary to whom I shan’t write till I’ve something to tell. My dear love to her & 1000 thanks for her sweet letter. Rederer is engaged to
+                    <persName key="Semon, Richard" ref="https://d-nb.info/gnd/118764497">Dr. Semon</persName>
+                    !!!!
+                </p>
+                <closer>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html
+                </closer>
+                <postscript> ## </postscript>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>

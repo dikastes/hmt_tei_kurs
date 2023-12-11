@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth und ihre Netzwerke</title>
+                <title level="a">Brief 11 1877-10-08</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>
+                        Peiyao Ma
+                        <email>pm83jija@stud.hmt-leipzig.de</email>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>HMT Bibiothek</settlement>
+                        <repository>HMT Bibiothek</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Smyth, Nina" ref="https://d-nb.info/gnd/Ninasymth">Symth,Nina</persName>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">Englisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div>
+                <opener>
+                    <!-- Place de Repos Treppen GIII ... -->
+                    <address>
+                        <!-- besteht aus 2 Adresszeilen -->
+                        <addrLine>
+                            Tuesday Sue
+                            <del>Sep.</del>
+                            <add>Otctober.</add>
+                            9th
+                        </addrLine>
+                    </address>
+                    <salute>
+                        Liebe
+                        <persName key="Symth, Nina" ref="https://d-nb.info/gnd/Ninasymth">Nina</persName>
+                        ,
+                    </salute>
+                </opener>
+                <p>
+                    <lb/>
+                    I have a grand chance
+                    <lb/>
+                    of writing to you, which may not come again.
+                    <lb/>
+                    Though I went out today, obtaining various
+                    <lb/>
+                    documents and seeing strange things at the
+                    <lb/>
+                    Conservatorium
+                    <settlement key="Bernau" ref="https://d-nb.info/1137965401">Bernau</settlement>
+                    , I am by no
+                    <lb/>
+                    means fit for much after my cough
+                    <lb/>
+                    and throat. I only sallied forth because
+                    <lb/>
+                    I felt a delay in such matters may make
+                    <lb/>
+                    a great bore afterward (though you can't be blamed). Sometimes I'd better
+                    <lb/>
+                    have stayed at home, luckily I
+                    <lb/>
+                    met my beloved music master on the
+                    <lb/>
+                    stairs, and told him that practicing made me
+                    <lb/>
+                    congh so horribly that he mustn't ex-
+                    <lb/>
+                    pect anything of me. It's also lucky
+                    <lb/>
+                    that I got a good name for industry
+                    <lb/>
+                    in two things (I told you in one of my previous
+                    <lb/>
+                    letters), as he hastened and let me. I
+                    <lb/>
+                    needn't trouble myself. So, as I am
+                    <lb/>
+                    up I have nothing to do, I will indite
+                    <lb/>
+                    a letter to Sister
+                    <hi rend="superscript">
+                        Alice.
+                        <persName key="Symth, Alice " ref="https://d-nb.info/gnd/symthalice">Alice</persName>
+                        I must
+                    </hi>
+                    <lb/>
+                    <hi rend="superscript">tell you a proud moment in drawing</hi>
+                    <pb/>
+                    near for me!In the Conservatorium you
+                    <lb/>
+                    must have cards, as almost every inter-
+                    <lb/>
+                    view with the "heads" must be prefaced
+                    <lb/>
+                    by a sending up of your card. This is
+                    <lb/>
+                    natural, as people of
+                    <hi rend="superscript">all</hi>
+                    nations are
+                    <lb/>
+                    at the
+                    <settlement key="Königliches Konservatorium der Musik zu Leipzig" ref="https://d-nb.info/gnd/5039621-3">Conservatorium</settlement>
+                    , – the names of
+                    <lb/>
+                    300 pupils are not easy to learn off by
+                    <lb/>
+                    heart. My dear, there are two great
+                    <lb/>
+                    live mulattos and one nigger here!
+                    <lb/>
+                    The
+                    <del>megg.</del>
+                    <add>Negress.</add>
+                    (for she is of the
+                    <lb/>
+                    fairprey) is, by way of being a great
+                    <lb/>
+                    dresser. Nature manages her hair
+                    <lb/>
+                    so cunningly (+ I'm sure no art can ma-
+                    <lb/>
+                    nage it) - and she affections long
+                    <lb/>
+                    gold earrings +
+                    <hi rend="superscript">most</hi>
+                    stylish bonnets,
+                    <lb/>
+                    and wears gloves on all occasions. I
+                    <lb/>
+                    suppose she forgets her face + mocks at
+                    <lb/>
+                    then we have got a Norwegian with a
+                    <lb/>
+                    red cap and satchel of paracletes about
+                    <lb/>
+                    in a cassock, and altogether is not
+                    <lb/>
+                    unlike
+                    <persName key="Spurgeon, Charles" ref="https://d-nb.info/gnd/CharlesSpurgeon">Uncle Charles</persName>
+                    . +three fire-worshippers
+                    <lb/>
+                    who wear chimney-pot hats with no brims (sort of busbies made of
+                    <lb/>
+                    top hat material) and flowing robes.
+                    <pb/>
+                    The Papa’s military cape
+                    <hi rend="superscript">only more so! </hi>
+                    <lb/>
+                    But I am wandering from my subject.
+                    <lb/>
+                    About how you thought it was not your
+                    <lb/>
+                    often unbridled vanity- not reckless
+                    <lb/>
+                    expenditure on my part that caused me
+                    <lb/>
+                    order —— 100 visiting cards and an order
+                    <lb/>
+                    for 1/3 with my name and address!!!!
+                    <lb/>
+                    If ever there was a peacock daw, that
+                    <lb/>
+                    peacock almost as grand as one will be when you can read writing.
+                    <lb/>
+                    Belle in die
+                    <settlement key="Schwansee" ref="https://d-nb.info/gnd/1052616747">Schwansee</settlement>
+                    has sent me
+                    <lb/>
+                    a card when, to the people, and told Ma-
+                    <lb/>
+                    ma of me - the
+                    <settlement key="Brockhaus" ref="https://d-nb.info/gnd/7645749-7">Brockhauses</settlement>
+                    - that al-
+                    <lb/>
+                    ready written to them about me,
+                    <lb/>
+                    and tomorrow— I go and leave
+                    <hi rend="superscript">my </hi>
+                    <lb/>
+                    card with there with New!!! Oh glorious!
+                    <lb/>
+                    Tomorrow begins the
+                    <add place="inline">musical</add>
+                    season here-
+                    <lb/>
+                    I feel quite bewildered and quite gale
+                    <lb/>
+                    the music I shall hear at
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                    <lb/>
+                    with just needing to step outside my
+                    <lb/>
+                    room, as it were, into the concert
+                    <lb/>
+                    room. And when one Musik
+                    <lb/>
+                    <settlement key="Londen" ref="https://d-nb.info/gnd/1182737889">Londen</settlement>
+                    and the difficulties the
+                    <add place="inline">8</add>
+                    overcomes.
+                    <lb/>
+                    The journey down, the chaperone—
+                    <lb/>
+                    the full dress, + other bothers - oh, it
+                    <lb/>
+                    cringes. However, I won't rave about
+                    <pb/>
+                    that to you, as it can’t be interesting.
+                    <lb/>
+                    About you not haveing been Mr.
+                    <lb/>
+                    <persName key="Ralph Vaughan" ref="https://d-nb.info/gnd/Ralph Vaughan">Mr.Vaughan</persName>
+                    ? Could you persuade Papa
+                    <lb/>
+                    to take you there someday, just
+                    <lb/>
+                    before now she is, + tell me. I was so
+                    <lb/>
+                    glad to have news of Mrs. Trevelyan.
+                    <persName key="Vaughan Williams,Ralph" ref="https://d-nb.info/gnd/Ninasymth">Mr.Vaughan</persName>
+                    <lb/>
+                    There are two people I shall pay
+                    <lb/>
+                    a visit to when I get home mother. Mrs. and Mr. Napier.
+                    <persName key="Mrs. and Mr. Napier General William" ref="https://d-nb.info/gnd/WilliamNapier">Mrs. and Mr. Napier</persName>
+                    <lb/>
+                    And I'm going to bring home such a sausage, Ma-
+                    <lb/>
+                    ma ,
+                    <persName key="Juliana Euing" ref="https://d-nb.info/gnd/Juliana Euing">Mrs. Euing</persName>
+                    . It's like the most
+                    <lb/>
+                    beautifully delicate forced meat you
+                    <lb/>
+                    ever tasted. Mary will eat a whole one
+                    <lb/>
+                    at a sitting, I fancy. By the way,
+                    <lb/>
+                    Just fancy, the wife of the „Kapellmeister“
+                    <lb/>
+                    here (the second musical authority in
+                    <lb/>
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                    ) is a sausage of noble birth
+                    <lb/>
+                    who came here and took lessons from Timb, and
+                    <lb/>
+                    married him, though he had 2 wives,—
+                    <lb/>
+                    <hi rend="superscript">had </hi>
+                    9 children, and at the night, man
+                    <lb/>
+                    I ever saw with a face à la Major
+                    <lb/>
+                    Griffith, but
+                    <hi rend="superscript">all over </hi>
+                    !! Isn't my future
+                    <lb/>
+                    delightfully mapped out for me！
+                    <lb/>
+                    Sarina here has 2 piano maelezo,
+                    <pb/>
+                    <add place="top">2）</add>
+                    the difficulty of his indeciding which
+                    <lb/>
+                    and capture!! - no my love, fear
+                    <lb/>
+                    not. I never was matrimonially
+                    <lb/>
+                    addicted—Had I been so, it's not
+                    <lb/>
+                    he
+                    <hi rend="superscript">here </hi>
+                    ） that's quite certain.
+                    <lb/>
+                    But I don't mind; I never appreciated
+                    <lb/>
+                    the necessity of temporary spinster-
+                    <lb/>
+                    hood(at any rate, not to late ）
+                    <lb/>
+                    and certain kinds of lives until I
+                    <lb/>
+                    came here. You may rely upon that
+                    <lb/>
+                    and fear no brother-in-law.
+                    <lb/>
+                    Supper is ready, and the very
+                    <lb/>
+                    sausage, 'Leberwurst,' it is called,
+                    <lb/>
+                    awaits me. I fly.
+                    <lb/>
+                    Dear love to all at home
+                    <lb/>
+                    and write soon, huge long letter.
+                    <lb/>
+                    My cold has pulled me down
+                    <lb/>
+                    and made most employments pro
+                    <lb/>
+                    tem rather a bore, so home letters are all the more welcome.
+                    <lb/>
+                    Ever darling, your devoted sister
+                    <lb/>
+                    P.S.
+                    <lb/>
+                    Dear texts, no chance of the contingence
+                    <lb/>
+                    Voulez souffrir. That is, I had better of
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                    <lb/>
+                    <add place="end">and come home before my fear.</add>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

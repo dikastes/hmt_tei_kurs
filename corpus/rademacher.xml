@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">Ethel Smyth an ihre Mutter 1878-05-19</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix mendelssohn Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Svenja Rademacher</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <!--
+                        die HMT hat auch eine GND ID  	https://d-nb.info/gnd/2128246-8 
+                    -->
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>HMT Leipzig Bibliothek</settlement>
+                        <repository>Hochschule für Musik und Theater Leipzig</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="1878-05-19">
+                        May 19
+                        <hi rend="underlined2"> th </hi>
+                        78
+                    </date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Nina Smyth" ref="https://d-nb.info/gnd/118883658">Nina Smyth geb. Struth</persName>
+                    <date when="1878-05-19"/>
+                    <settlement>
+                        key="##Empfangsort" ref="##"https://d-nb.info/gnd/118883658"">England
+                    </settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div>
+                <!-- <addrLine> Salomonstr [Bleistift] </addrLine> -->
+                <opener>
+                    <salute>
+                        <lb/>
+                        My darling
+                        <persName key="##"> mother, </persName>
+                        .
+                    </salute>
+                </opener>
+                <p>
+                    <lb/>
+                    Dont be alarmed
+                    <hi rend="strikethrough">
+                        <unclear> </unclear>
+                    </hi>
+                    at seeing a strange handwiting -
+                    <lb/>
+                    I'm in Bed but not sick
+                    <lb/>
+                    "unto death", my nerves have
+                    <lb/>
+                    been rather knocked up for
+                    <lb/>
+                    some time and now my
+                    <lb/>
+                    unhappy heart has to bear
+                    <lb/>
+                    the brunt of it. I have
+                    <lb/>
+                    been sent to bed in order to
+                    <lb/>
+                    reduce the palpitation and
+                    <lb/>
+                    here may have to stay
+                    <lb/>
+                    for a day or two longer, in
+                    <lb/>
+                    all about a week. Don't think
+                    <lb/>
+                    mother darling, that I have
+                    <lb/>
+                    been left entirely on my
+                    <lb/>
+                    own hook. I have been
+                    <hi rend="superscript">nursed </hi>
+                    <!-- 'nursed' vermutlich nachträglich eingefügt. -->
+                    <lb/>
+                    during this week
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    as well as I ever was in my life both
+                    <lb/>
+                    night and day, but as
+                    <persName key="Herzogenberg, Elisabeth von" ref="https://d-nb.info/gnd/124263690">
+                        the
+                        <lb/>
+                        instrument of my recovery
+                    </persName>
+                    <lb/>
+                    happened to be writing this
+                    <lb/>
+                    for me I will tell you
+                    <lb/>
+                    <hi rend="strikesthough"> more </hi>
+                    <hi rend="superscript">all</hi>
+                    about it, when I
+                    <lb/>
+                    can write to you myself.
+                    <lb/>
+                    (the poor
+                    <persName key="Herzogenberg, Elisabeth von" ref="https://d-nb.info/gnd/124263690">
+                        <lb/>
+                        <del rend="overstrike">emanuensis</del>
+                        <add place="above">amanuensis</add>
+                    </persName>
+                    is
+                    <lb/>
+                    suffering severely from writing
+                    <lb/>
+                    the accompanying!)
+                </p>
+                <p>
+                    <lb/>
+                    And now please
+                    <persName key="Nina Smyth" ref="https://d-nb.info/gnd/118883658">mother </persName>
+                    <lb/>
+                    listen attentively to what's
+                    <lb/>
+                    coming.;
+                </p>
+                <p>
+                    <lb/>
+                    1
+                    <hi rend="superscript">
+                        <hi rend="underline">
+                            <hi rend="underline">o</hi>
+                        </hi>
+                    </hi>
+                    there's no disease of
+                    <lb/>
+                    the heart but if I didn't
+                    <lb/>
+                    take care of myself
+                    <lb/>
+                    during the next few
+                    <lb/>
+                    months it might become
+                    <lb/>
+                    so. The doctor says seeing
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    that the heat is already
+                    <lb/>
+                    very severe in
+                    <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig </settlement>
+                    and
+                    <lb/>
+                    will of course become more
+                    <lb/>
+                    so, I should have but a
+                    <lb/>
+                    poor chance of
+                    <del rend="overstrike">putting</del>
+                    <add place="above">pulling</add>
+                    <!--t-Striche mit Bleistift durchgestrichen-->
+                    <lb/>
+                    together again if I stay
+                    <lb/>
+                    on here long. Added to
+                    <lb/>
+                    this I should of course
+                    <lb/>
+                    be unable to visit the
+                    <lb/>
+                    <placeName key="Königliches Konservatorium zu Leipzig" ref="https://d-nb.info/gnd/5039621-3">Conservatorium</placeName>
+                    . This is
+                    <lb/>
+                    no misfortune because
+                    <lb/>
+                    as you know I have
+                    <lb/>
+                    already begun my course
+                    <lb/>
+                    of instruction with
+                    <lb/>
+                    <persName key="Herzogenberg, Heinrich von" ref="https://d-nb.info/gnd/119523876">Herr von Herzogenberg</persName>
+                    <lb/>
+                    and he has mapped
+                    <lb/>
+                    out for me the contrapuntae
+                    <lb/>
+                    root which I am to
+                    <lb/>
+                    follow during the
+                    <del rend="overstrike">holydays</del>
+                    <add place="above">holy days</add>
+                    <!--
+                        Verbindung zwischen y und d nachträglich mit Bleistift durchgestrichen
+                    -->
+                </p>
+                <p>
+                    <lb/>
+                    until we resume the thread
+                    <lb/>
+                    of our discourse in the
+                    <lb/>
+                    autumn. As the ways in
+                    <lb/>
+                    the
+                    <placeName key="Königliches Konservatorium zu Leipzig" ref="https://d-nb.info/gnd/5039621-3">Conservatorium</placeName>
+                    are not
+                    <lb/>
+                    like unto his ways it's
+                    <lb/>
+                    just as well, noy even better
+                    <lb/>
+                    that I
+                    <choice>
+                        <sic cert="high">should'nt</sic>
+                        <corr>shouldn't</corr>
+                    </choice>
+                    mix
+                    <lb/>
+                    up the two, in my unfortu
+                    <lb/>
+                    nate cerebrum. When I
+                    <lb/>
+                    am at home I am afraid
+                    <lb/>
+                    I shall have, at first at all
+                    <lb/>
+                    events, to live rather dif-
+                    <lb/>
+                    ferently
+                    <hi rend="strikethrough"> for </hi>
+                    from to what I ex-
+                    <lb/>
+                    pected. for it is not the
+                    <lb/>
+                    work I shall do that
+                    <lb/>
+                    will kusel me up but
+                    <lb/>
+                    the return to the old
+                    <lb/>
+                    life I used to lead
+                    <del rend="overstrike">auch</del>
+                    <add place="above">in</add>
+                    <lb/>
+                    the palmy days of cakes
+                    <lb/>
+                    and ale. This you will
+                    <lb/>
+                    understand when I tell you
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    that the things I am at present
+                    <lb/>
+                    forbidden are flopping about
+                    <lb/>
+                    in bed, talking bond
+                    <lb/>
+                    (from which she is very
+                    <lb/>
+                    difficult to be kept back)
+                    <lb/>
+                    gesticulating and following
+                    <lb/>
+                    the natural impulses of
+                    <lb/>
+                    my depraved nature.
+                </p>
+                <p>
+                    <lb/>
+                    Of course I am at present
+                    <lb/>
+                    also forbidden to do any
+                    <lb/>
+                    sort of work or anything
+                    <lb/>
+                    that egites me, for it
+                    <lb/>
+                    takes but little to make
+                    <lb/>
+                    my heart beat like
+                    <add place="inline">a</add>
+                    bell
+                    <lb/>
+                    clapper.
+                    <hi rend="strikethrough">
+                        <unclear quantity="1" unit="word"/>
+                    </hi>
+                    As regards
+                    <lb/>
+                    details I have had little
+                    <lb/>
+                    or no pain; in fact the
+                    <lb/>
+                    whole thing is not dangerous
+                    <lb/>
+                    but my health for some
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    time depends upon whether
+                    <lb/>
+                    I take proper care of myself after this crisis. After a
+                    <lb/>
+                    fourtnight my work will
+                    <lb/>
+                    easily be in no way affected by it.
+                </p>
+                <p>
+                    <lb/>
+                    I leave it to you to say
+                    <lb/>
+                    of as the Doctor advices
+                    <lb/>
+                    I shall come home
+                    <lb/>
+                    as soon as I am well
+                    <lb/>
+                    enough to travel. When
+                    <lb/>
+                    you have had enough
+                    <lb/>
+                    of
+                    <hi rend="strikethrough">y</hi>
+                    me at home! I
+                    <lb/>
+                    could come back to Germany
+                    <lb/>
+                    and establish myself
+                    <lb/>
+                    with
+                    <persName key="Friedlaender, Max" ref="https://d-nb.info/gnd/116797673"> Friedländers </persName>
+                    at
+                    <settlement key="Friedrichroda" ref="https://d-nb.info/gnd/4018592-8">
+                        Friedrich
+                        <lb/>
+                        Roda
+                    </settlement>
+                    or some such place
+                    <lb/>
+                    but I don't think the
+                    <lb/>
+                    gaieties at home will
+                    <lb/>
+                    tempt me from my
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    work. Well, That's about all. It
+                    <lb/>
+                    only remaines to tell you
+                    <lb/>
+                    not to be anxious about
+                    <lb/>
+                    me. You'll find me looking as well as ever
+                    <lb/>
+                    and alas as inchired
+                    <lb/>
+                    to "gather the rosebuds
+                    <lb/>
+                    while I may" as of
+                    <lb/>
+                    yore. Write soon and
+                    <lb/>
+                    give me your opinion,
+                    <lb/>
+                    on all this. Best love
+                    <lb/>
+                    to all and many thanks to Violet for
+                    <lb/>
+                    her letter which I of
+                    <lb/>
+                    course
+                    <hi rend="underlined"> cannot </hi>
+                    answer
+                    <lb/>
+                    now, or I would.
+                </p>
+                <p>
+                    <lb/>
+                    I am fairly on the
+                    <lb/>
+                    road of to recovery
+                    <lb/>
+                    and will get up.
+                </p>
+                <pb/>
+                <p>
+                    <lb/>
+                    tomorrow.
+                </p>
+                <closer>
+                    <salute>
+                        <lb/>
+                        Ever your devoted child
+                    </salute>
+                    <signed>
+                        <lb/>
+                        Ethel.
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>
+                        <lb/>
+                        (
+                        <unclear quantity="1" unit="word"/>
+                        cannot help
+                        <lb/>
+                        saying that she enjoyed
+                        <lb/>
+                        meeting your dear
+                        <lb/>
+                        child so very much;
+                        <lb/>
+                        also she must assure
+                        <lb/>
+                        you that you have not
+                        <lb/>
+                        <hi rend="strikethrough"> can not</hi>
+                        the least
+                        <lb/>
+                        occasion more to be discomforted about Ethel.)
+                    </p>
+                    <p>
+                        <lb/>
+                        1
+                        <hi rend="superscript">st</hi>
+                        letter
+                        <lb/>
+                        <hi rend="strikethrough">
+                            <unclear quantity="1" unit="word"/>
+                        </hi>
+                        <lb/>
+                        <hi rend="strikethrough">
+                            <unclear quantity="1" unit="word"/>
+                        </hi>
+                        <lb/>
+                        <hi rend="strikethrough">
+                            <unclear quantity="1" unit="word"/>
+                        </hi>
+                        <lb/>
+                        <hi rend="strikethrough">
+                            <unclear quantity="1" unit="word"/>
+                        </hi>
+                        <lb/>
+                        <hi rend="strikethrough">
+                            <unclear quantity="1" unit="word"/>
+                        </hi>
+                    </p>
+                </postscript>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>

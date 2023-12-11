@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">Ethel Smyth an Nina Emma Struth 1878-01-24</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Maria Bujanov</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>HMT Leipzig</settlement>
+                        <repository>HMT Bibliothek</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="1978-01-24">July 24th 78</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Struth, Nina Emma" ref="##GND-ID">Nina Emma Struth</persName>
+                    <date when="##JJJJ-MM-DD">##Empfangsdatum</date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!--Digitalisate -->
+    <facsimile>
+        <graphic url="=http://digital.slub-dresden.de/id505437279"/>
+    </facsimile>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div hand="Nachname, Vorname">
+                <opener>
+                    Place de Repos
+                    <lb/>
+                    Treppe G III
+                    <lb/>
+                    <salute>
+                        My darling Mother.
+                    </salute>
+                </opener>
+                <p>
+                    I must only write a very short note as I’ve got to prepare. This was begun yesterday before I suddenly came to the conclusion that it would be more satisfactory to write a proper letter today and dispatch a postcard yesterday. Mo- ther darling – I’ve got any amount of time for I’m not to work
+                    <hi rend="underlined">at all</hi>
+                    for a week – & only in moderation after that. It was the rusting about after pension that chiefly did me up – also the amount of night work I got through. But now I am happy to say, I have a fixed home
+                    <hi rend="underlined">next</hi>
+                    <hi rend="underlined">to</hi>
+                    Frau B. B!
+                    <hi rend="underlined">Isn’t</hi>
+                    that nice! She will watch over me with a dragon’s eye & help me in excellent order – she says! However I’m
+                    <hi rend="underlined">very</hi>
+                    tame just now so she won’t have much trouble with me!
+                    <pb/>
+                    I’ve nothing much to do & read all day nearly when I’m not out. Also visit the Seislinger occasionally at
+                    <choice>
+                        <sic cert="high">their</sic>
+                        <sic cert="low">her</sic>
+                        <corr>their</corr>
+                    </choice>
+                    own house – for a lack I am for- bidden theatre by the Doctor! - & I really think I may in time make her rather fond of me in a sort of way
+                    <choice>
+                        <abbr>tho'</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    I don’t think she cares much for anything except her art as far as I can make out. Your letter of today telling me about the Fan- cy Ball was
+                    <hi rend="underlined">most</hi>
+                    thrilling! What
+                    <choice>
+                        <abbr>
+                            w_
+                            <hi rend="above">d</hi>
+                        </abbr>
+                        <expan>would</expan>
+                    </choice>
+                    I have given to have been there! However this Xmas I have had to go in so strongly for
+                    <hi rend="underlined">applied</hi>
+                    philo- sophy that I’m quite a proficient threat now! The barrister bore my box of sweet stuff to London last Monday – & as he was a busy man & lives at the corner of
+                    <unclear quantity="1" unit="word"/>
+                    Cumberland Place I thought I’d better select Louie’s
+                    <pb/>
+                    as a place for him to leave it at to be picked up by the first member of the family that goes to town. I also wrote a note to Louie explaining what it was etc. I wonder if you’ll like it! One can’t eat much at a time
+                    <choice>
+                        <abbr>tho'</abbr>
+                        <expan>although</expan>
+                    </choice>
+                    !! I am so much dis- tressed that I can't go on working away at my string quartette. My master
+                    <hi rend="underlined">
+                        <hi rend="underlined">
+                            <hi rend="underlined">was</hi>
+                        </hi>
+                    </hi>
+                    so pleased with the 1
+                    <hi rend="superscript">st</hi>
+                    movement. He's been telling lots of people about it & there it lies & I haven't the faintest inspiration to go on with it!! Thanks to this seediness! However inspiration is a thing that comes & goes like the wind & one hasn't the
+                    <hi rend="underlined">remotest</hi>
+                    idea when & where it will spring up. The whole "Direction" has been thrown into the greatest conslemation. Tomorrow at the Gewandhaus Concert
+                    <persName key="Schumann, Clara" ref="http://d-nb.info/gnd/11861164X">Frau Schumann</persName>
+                    was to have played celebrating her
+                    <hi rend="underlined">50</hi>
+                    <hi rend="superscript">th</hi>
+                    "Jubilaum" as they call it – in these concerts. (She is 64 & played first when 14!)
+                    <hi rend="underlined">Yesterday</hi>
+                    came a telegram to say she was so ill & nervous that
+                    <persName key="Brahms, Johannes" ref="http://d-nb.info/gnd/118514253">Brahms</persName>
+                    &
+                    <persName key="Joachim, Joseph" ref="http://d-nb.info/gnd/118776223">Joachim</persName>
+                    had persuaded her she was not fit to play & that she had de- cided to play
+                    <hi rend="underlined">no</hi>
+                    <hi rend="underlined">more</hi>
+                    this season! She is not going to England either – of course everyone knows what it will be. She will never play again in public.
+                    <hi rend="underlined">How</hi>
+                    glad I am you heard her last year! as I’m afraid you will never have another chance. The consternation of the Gewandhaus Direction may be imagined for she was to have played Schumann’s Concerto – and lots of little things. However luckily
+                    <hi rend="underlined">the</hi>
+                    Lieder Singer par excellence in Germany, Frau Murian, sang here last concert & is still in Leipzig – so they’ve persuaded her to fill up the gap. Well Mother darling, this is a
+                    <hi rend="underlined">very</hi>
+                    stupid letter, but I’m feeling more stupid than words can say & very cross with
+                    <choice>
+                        <abbr>
+                            D_
+                            <hi rend="above">r</hi>
+                        </abbr>
+                        <expan>Doctor</expan>
+                    </choice>
+                    Langhein & the world in general. I hope Papa got my last letter & will soon act upon it! For on tomorrow week I leave this dear place; after next Sunday I’ll give my new address. Goodbye my own darling Mother. Dearest love to all & a
+                    <hi rend="underlined">long letter</hi>
+                    to
+                    <hi rend="underlined">Violet</hi>
+                    in.
+                </p>
+                <closer>
+                    ## siehe https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html
+                </closer>
+                <postscript> ## </postscript>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>

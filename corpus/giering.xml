@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">
+                    Ethel Smyth an ihre Mutter Nina Emma Smyth 1878-05-27
+                </title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Felix Mendelssohn-Bartholdy</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Florian Giering</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        <repository key="Hochschule für Musik und Theater " Felix Mendelssohn BArtholdy " Leipzig" ref="https://d-nb.info/1187924253">
+                            Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                        </repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="1878-05-27">1878-05-27</date>
+                    <address>
+                        <street>Salomonstr. 19</street>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7 ">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="Nina Emma Smyth">Nina Emma Smyth</persName>
+                    <date when="1878-05-27">1878-05-27</date>
+                    <!--
+                        hier ist unklar, ob das zum Brief gehörige Datum Schreib-, Sendungs- oder Empfangsdatum ist. 
+                    -->
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                    <!-- noch zu klären. -->
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="###"/>
+        <!--
+            normale URL lässt sich nicht ohne Fehlermeldung einfügen – andere Version? 
+        -->
+    </facsimile>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div hand="Symth,Ethel">
+                <opener>
+                    <address>
+                        <name type="place">Salomonstr. 19</name>
+                    </address>
+                    <lb/>
+                    <dateline>
+                        <date>
+                            <abbr>Satr</abbr>
+                            <expan>Saturday</expan>
+                            Evening
+                        </date>
+                    </dateline>
+                    <lb/>
+                    <salute>
+                        My own darling
+                        <persName key="Nina Emma Smyth">Mother</persName>
+                    </salute>
+                </opener>
+                <p>
+                    <lb/>
+                    – at last I
+                    <lb/>
+                    am up & able to write to you with my
+                    <lb/>
+                    own hand, but just fancy, with pauses
+                    <lb/>
+                    about every 3 minutes – as writing
+                    <lb/>
+                    brings on the arracks more than anything
+                    <lb/>
+                    almost. I’m up now – very feeble of course
+                    <lb/>
+                    after a fortnight in bed – & such
+                    <unclear>tufles</unclear>
+                    <lb/>
+                    as crossing the room or doing my hair
+                    <lb/>
+                    are fearfully laborious & attended with
+                    <lb/>
+                    palpitation – the doctor thinks it doubt
+                    <lb/>
+                    ful if I am fit to travel before a fort-
+                    <lb/>
+                    night
+                    <hi rend="underline" n="1">hence</hi>
+                    – so after all it will only
+                    <lb/>
+                    be a week or two sooner than I intended.
+                    <lb/>
+                    I have at last seen the absolute
+                    <lb/>
+                    necessity of acquiescing on the matter
+                    <lb/>
+                    of my modus vivandi
+                    <!--hier [sic!] einfügen-->
+                    during the holidays
+                    <lb/>
+                    – & I have signed a paper of rules
+                    <lb/>
+                    the doctor prescribes for me – he &
+                    <lb/>
+                    another doctor pronounce it to be the
+                    <lb/>
+                    only way of avoiding permanent
+                    <lb/>
+                    heart disease \to/ which for the next
+                    <lb/>
+                    few months I shall be very liable
+                    <lb/>
+                    to
+                    <abbr>wh.</abbr>
+                    <expan>what</expan>
+                    may be produces by either
+                    <lb/>
+                    mental or muscular imprudences.
+                    <lb/>
+                    Just imagine –
+                    <hi rend="underline" n="1">no</hi>
+                    lawn tennis,
+                    <hi rend="underline" n="1">no</hi>
+                    <lb/>
+                    <pb/>
+                    riding – no dancing –
+                    <hi rend="underline" n="1">nothing</hi>
+                    –
+                    <lb/>
+                    this to me who have all this year
+                    <lb/>
+                    been looking forward to playing
+                    <lb/>
+                    with renewed
+                    <unclear>rigors</unclear>
+                    into the old life
+                    <lb/>
+                    for a little bit – & have been glorying
+                    <lb/>
+                    in the feeling that I could face the
+                    <lb/>
+                    holly hedge on the Green, or an ad-
+                    <lb/>
+                    versary at Lawn
+                    <unclear>Ismis</unclear>
+                    without
+                    <lb/>
+                    fear – that after I had been a
+                    <lb/>
+                    week in home air the old Adam
+                    <lb/>
+                    would be fully reestablished in me.
+                    <lb/>
+                    The dreadful thing is I can hardly
+                    <lb/>
+                    realise that it is absolutely ne-
+                    <lb/>
+                    cessary. & the way the Doctor &
+                    <lb/>
+                    <persName key="Elisabeth von Herzogenberg" ref="https://d-nb.info/gnd/124263690">Frau von Herzogenberg</persName>
+                    fully appre-
+                    <lb/>
+                    ciating the
+                    <unclear>hardship</unclear>
+                    of bending ones
+                    <unclear>leg</unclear>
+                    <lb/>
+                    where one does
+                    <hi rend="underline" n="1">not</hi>
+                    feel it necessary
+                    <lb/>
+                    – endeavoured – & have now neary
+                    <lb/>
+                    Managed to convince me that it is
+                    <lb/>
+                    So – was quite touching – She
+                    <lb/>
+                    ought to know – when she was
+                    <lb/>
+                    my age she was perfectly healthy
+                    <lb/>
+                    in the heart – & it was by ne-
+                    <lb/>
+                    glecting
+                    <unclear>pist</unclear>
+                    such a
+                    <hi rend="underline" n="1">nervous</hi>
+                    <lb/>
+                    affection as I have that she
+                    <del>
+                        <unclear>###</unclear>
+                    </del>
+                    <lb/>
+                    brought about a chronic disease –
+                    <lb/>
+                    <pb/>
+                    It is painful now to see her going
+                    <lb/>
+                    upstairs – pausing every 3 steps
+                    <lb/>
+                    & the least exertion brings on such
+                    <lb/>
+                    palpitation that you can almost
+                    <lb/>
+                    hear the heart beating. Of course
+                    <lb/>
+                    she is for ever debarred from going
+                    <lb/>
+                    out of a slow walk & dancing is
+                    <lb/>
+                    out of the question. I always main-
+                    <lb/>
+                    tain a German
+                    <hi rend="underline" n="1">cannot</hi>
+                    appreciate
+                    <lb/>
+                    what a terrible sacrifice it is to
+                    <lb/>
+                    an English girl brought up as I
+                    <lb/>
+                    have been – & to whom all these
+                    <lb/>
+                    things are special nature –
+                    <lb/>
+                    Particulary as it will be as good
+                    <lb/>
+                    as bedding all that farewell
+                    <lb/>
+                    for another year – as of course I
+                    <lb/>
+                    have no chance in Germany &
+                    <lb/>
+                    must wait till I again come
+                    <lb/>
+                    to England. Still it is true –
+                    <lb/>
+                    that is nothing against a life
+                    <lb/>
+                    time – & I know it
+                    <hi rend="underline" n="1">must</hi>
+                    be so.
+                    <lb/>
+                    <del>Before</del>
+                    Thank goodness the nature
+                    <lb/>
+                    of the malady does not forbid
+                    <lb/>
+                    any amount of work – & the
+                    <lb/>
+                    only conditions put upon
+                    <hi rend="underline" n="1">that</hi>
+                    <lb/>
+                    are – that I’m not to practice for
+                    <lb/>
+                    more than 2 consecutive hours
+                    <lb/>
+                    – & not to work or compose at
+                    <lb/>
+                    <pb/>
+                    night – so that is all right –
+                    <lb/>
+                    I try for about 2 hours every day
+                    <lb/>
+                    about it. I think it is one of the
+                    <lb/>
+                    hardest things I ever heard of –
+                    <lb/>
+                    but it might have been worse
+                    <lb/>
+                    of course. What
+                    <persName key="Elisabeth von Herzogenberg" ref="https://d-nb.info/gnd/124263690">
+                        <abbr>Frau v. H.</abbr>
+                        <expan>Frau von Herzogenberg</expan>
+                    </persName>
+                    has
+                    <lb/>
+                    been to me no one knows but I –
+                    <lb/>
+                    Here at 8 o’clock in the morning
+                    <lb/>
+                    she cooked my breakfast for me
+                    <lb/>
+                    –
+                    <hi rend="underline" n="1">washed</hi>
+                    me – did yet more
+                    <lb/>
+                    delicate offices for me (in as
+                    <lb/>
+                    far as a human being can
+                    <lb/>
+                    do them for another!). bought
+                    <lb/>
+                    me the tenderest leaf wheats
+                    <lb/>
+                    she could find – & cooked them
+                    <lb/>
+                    herself for me. Read to me. &
+                    <lb/>
+                    (as soon as I was allowed) played
+                    <lb/>
+                    to me – put me to bed & every-
+                    <lb/>
+                    thing. One of her servants always
+                    <lb/>
+                    came for the 2 hours (2-4) she
+                    <lb/>
+                    was not there – she gave me
+                    <lb/>
+                    my medicine (
+                    <abbr>wh.</abbr>
+                    <expan>what</expan>
+                    I should
+                    <lb/>
+                    otherwise certainly have forgotten)
+                    <lb/>
+                    & did everything. She is not strong
+                    <lb/>
+                    at all & always had to
+                    <lb/>
+                    drive –
+                    <abbr>wh.</abbr>
+                    <expan>what</expan>
+                    made four cabs
+                    <lb/>
+                    <pb/>
+                    per diem. I tremble to think
+                    <lb/>
+                    of all I cost her – & they are not
+                    <lb/>
+                    particularly rich people. I
+                    <lb/>
+                    said something of the sort to her
+                    <lb/>
+                    one day & the utter astonish-
+                    <lb/>
+                    ment with wh. she met my
+                    <lb/>
+                    proposals was amusing. The
+                    <lb/>
+                    doctor says I don’t know how much
+                    <lb/>
+                    I owe to her – He told her “she might
+                    <lb/>
+                    go today” as I can now get along
+                    <lb/>
+                    without her, so I am every minute
+                    <lb/>
+                    expecting my farewell visit. I wish
+                    <lb/>
+                    you could see her – she is so lovely & good
+                    <lb/>
+                    I’m sure you’d be so fond of her –
+                    <lb/>
+                    <abbr>W.d</abbr>
+                    <expan>Would</expan>
+                    you write to her mother darling
+                    <lb/>
+                    & thank her? She’d be so pleased.
+                    <lb/>
+                    If you’d send it straight to me I’d
+                    <lb/>
+                    forward it. You could begin with
+                    <lb/>
+                    her straight away “Dear
+                    <persName>
+                        Frau von
+                        <lb/>
+                        Herzogenberg
+                    </persName>
+                    ” – as she’s so dear and
+                    <lb/>
+                    the only person I am on “Du” lesson
+                    <lb/>
+                    with in Germany as of course I saw
+                    <lb/>
+                    Dr as too old. – I will find out as
+                    <lb/>
+                    soon as possible
+                    <persName>Mother</persName>
+                    darling
+                    <lb/>
+                    all about the journey and let
+                    <lb/>
+                    you know how much money I
+                    <lb/>
+                    want – as to escort that is quite
+                    <lb/>
+                    splendid – a certain
+                    <persName>derzyman</persName>
+                    ’s
+                    <lb/>
+                    <pb/>
+                    daughter,
+                    <persName>Miss Gawford</persName>
+                    by
+                    <lb/>
+                    name – who is (bar
+                    <persName>Mr Forster</persName>
+                    )
+                    <lb/>
+                    about the only respectable English
+                    <lb/>
+                    person I have met here – also
+                    <lb/>
+                    a chum of
+                    <persName>Mr forster</persName>
+                    , is tra-
+                    <lb/>
+                    velling to
+                    <origPlace key="England" ref="https://d-nb.info/gnd/4014770-8">England</origPlace>
+                    just about
+                    <lb/>
+                    then & will be so glad for us
+                    <lb/>
+                    to go together. It is absolutely
+                    <lb/>
+                    the same to her
+                    <hi rend="underline" n="1">when</hi>
+                    she goes
+                    <lb/>
+                    (between this & July it must
+                    <lb/>
+                    Be of course) &
+                    <hi rend="underline" n="1">how</hi>
+                    she goes.
+                    <lb/>
+                    I hope the Doctor will allow
+                    <lb/>
+                    me to travel straight through
+                    <lb/>
+                    – as I came. As I sleep well
+                    <lb/>
+                    in a train on a long journey
+                    <lb/>
+                    It is
+                    <del>
+                        <unclear>###</unclear>
+                    </del>
+                    not more tiring
+                    <lb/>
+                    for one I think –
+                    <persName>Miss Crawford</persName>
+                    <lb/>
+                    & we are quite at one on
+                    <hi rend="underline" n="1">this</hi>
+                    <lb/>
+                    Point – She says “I’d like to
+                    <lb/>
+                    spend as little money on the
+                    <lb/>
+                    Journey as possible”!!! She
+                    <lb/>
+                    has always come by
+                    <origPlace key="Dover" ref="https://d-nb.info/gnd/4085482-6">Dover</origPlace>
+                    &
+                    <lb/>
+                    <origPlace key="Calais" ref="https://d-nb.info/gnd/4229218-9">Calais</origPlace>
+                    – but I was very indignant
+                    <lb/>
+                    at the bare idea & said – it must
+                    <lb/>
+                    <pb/>
+                    be
+                    <origPlace key="Rotterdam" ref="https://d-nb.info/gnd/4050739-7">Rotterdam</origPlace>
+                    or
+                    <origPlace key="Hamburg" ref="https://d-nb.info/gnd/4023118-5">Hamburg</origPlace>
+                    . The
+                    <lb/>
+                    latter is a little longer on the
+                    <lb/>
+                    sea – but as
+                    <unclear>we</unclear>
+                    neither of us
+                    <lb/>
+                    mind that & it is much
+                    <lb/>
+                    prettier & I fancy a little
+                    <lb/>
+                    cheaper perhaps that
+                    <abbr>w.d</abbr>
+                    <expan>would</expan>
+                    <lb/>
+                    be best. However there’s time
+                    <lb/>
+                    for that & it’s a very secondary
+                    <lb/>
+                    question. I am
+                    <hi rend="underline" n="1">much</hi>
+                    disgusted
+                    <lb/>
+                    that I shall have to hurry
+                    <lb/>
+                    over an important matter – i. e.
+                    <lb/>
+                    choosing the souvenirs of Leipzig
+                    <lb/>
+                    for the folks at home. I
+                    <lb/>
+                    meant to have spent a whole
+                    <lb/>
+                    month in looking about & now
+                    <lb/>
+                    probably the matter must
+                    <lb/>
+                    be got over in a day or two –
+                    <lb/>
+                    Such is life. Also I meant
+                    <lb/>
+                    to have spent the fortnight pre-
+                    <lb/>
+                    vious to my department in prac-
+                    <lb/>
+                    ticing up various of my per-
+                    <lb/>
+                    fectly unplayable compositions
+                    <lb/>
+                    to (I hope) delight the mater-
+                    <lb/>
+                    nal ear. Instead of which I
+                    <lb/>
+                    am not allowed to touch
+                    <lb/>
+                    <pb/>
+                    a piano – and as I
+                    <hi rend="underline" n="1">can't</hi>
+                    help it
+                    <lb/>
+                    – when it stands there. The doctor
+                    <lb/>
+                    says better send it away!!
+                    <lb/>
+                    So mother darling you must
+                    <lb/>
+                    put up with them as they
+                    <lb/>
+                    are – in rough – & when you
+                    <lb/>
+                    hear them – listen to the com-
+                    <lb/>
+                    position, not the performance
+                    <lb/>
+                    of the same! I
+                    <hi rend="underline" n="1">can't</hi>
+                    realise that
+                    <lb/>
+                    I shall see you all again so soon.
+                    <lb/>
+                    – It is almost too good to be true –
+                    <lb/>
+                    that is to say
+                    <hi rend="underline" n="1">if</hi>
+                    it comes off!
+                    <lb/>
+                    Fancy if
+                    <persName>Mary</persName>
+                    is still there.
+                    <lb/>
+                    wh. I hope she will be.
+                    <lb/>
+                </p>
+                <closer>
+                    Dear love to all my darling
+                    <persName key="Nina Emma Smyth">Mother</persName>
+                    from
+                    <lb/>
+                    <lb/>
+                    Your devoted child
+                    <lb/>
+                    <lb/>
+                    Ethel Smyth
+                </closer>
+                <postscript>
+                    <p> </p>
+                </postscript>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>

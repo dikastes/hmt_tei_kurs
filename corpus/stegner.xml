@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"
+?>
+<?xml-model
+    href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"
+?>
+<TEI>
+    <!-- Metadaten -->
+    <teiHeader>
+        <!-- bibliografische Beschreibung -->
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Ethel Smyth</title>
+                <title level="a">Ethel Smyth an ihre Mutter JJJJ-MM-TT</title>
+                <author key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Ethel Smyth</author>
+                <editor>Christoph Hust</editor>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Paulinus Stegner</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>
+                        Hochschule für Musik und Theater "Felix Mendelssohn-Bartholdy" Leipzig
+                    </name>
+                    <address>
+                        <street>Grassistr. 8</street>
+                        <postCode>04107</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        </placeName>
+                    </address>
+                </publisher>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement key="Leipzig" ref="https://d-nb.info/gnd/4035206-7">Leipzig</settlement>
+                        <repository>Bibliothek der HMT Leipzig</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--
+            Textprofilbeschreibung, nicht-bibliografische Aspekte (Sprachen, Produktionskontext, Teilnehmende etc.) 
+        -->
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="Smyth, Ethel" ref="https://d-nb.info/gnd/118883658">Smyth, Ethel</persName>
+                    <date when="##JJJJ-MM-DD">##Sendedatum</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="##Empfänger" ref="##GND-ID">##Empfänger</persName>
+                    <date when="##JJJJ-MM-DD">##Empfangsdatum</date>
+                    <settlement key="##Empfangsort" ref="##GND-ID">##Empfangsort</settlement>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="de">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!-- Textbereich -->
+    <text>
+        <!--
+            Textkörper (im Gegensatz zu bspw. Vorwort/Anhang) 
+        -->
+        <body>
+            <div hand="Smyth, Ethel">
+                <opener>
+                    Oct
+                    <unclear quantity="1" unit="word"/>
+                    77 l
+                    <lb/>
+                    <unclear>(still piano!)</unclear>
+                    <lb/>
+                    Sunday
+                    <unclear quantity="3" unit="word"/>
+                    <settlement>
+                        <lb/>
+                        Place de
+                        <unclear quantity="1" unit="word"/>
+                        <lb/>
+                        Treppe G III
+                    </settlement>
+                    <salute>
+                        My own Darling
+                        <persName key="Struht, Nina Emma" ref="##GND-ID">Mother</persName>
+                    </salute>
+                </opener>
+                <p>
+                    Soo so many thanks for your
+                    <lb/>
+                    Letter but do you know Mother Darling
+                    <lb/>
+                    it took me more than 20 minutes to
+                    <lb/>
+                    read it &
+                    <unclear quantity="1" unit="word"/>
+                    1/2 a page is still a
+                    <lb/>
+                    mystery to me.
+                    <hi rend="underline">Do</hi>
+                    ask Pap to
+                    <lb/>
+                    give that horrid cheap blue paper
+                    <lb/>
+                    to the Children who write
+                    <unclear quantity="2" unit="word"/>
+                    -
+                    <lb/>
+                    <unclear quantity="2" unit="word"/>
+                    - whose letters are
+                    <hi rend="underline">almost</hi>
+                    <lb/>
+                    readable even when written on that
+                    <lb/>
+                    paper. But you write large & black
+                    <lb/>
+                    & it´s
+                    <hi rend="underline">utterly</hi>
+                    impossible to make
+                    <lb/>
+                    out 1/2 your letter unless you wrote
+                    <lb/>
+                    on only one side of the paper. & in
+                    <lb/>
+                    the
+                    <unclear quantity="1" unit="word"/>
+                    that
+                    <unclear quantity="1" unit="word"/>
+                    be false economy.
+                    <lb/>
+                    When aunt
+                    <unclear quantity="1" unit="word"/>
+                    wrote to me from
+                    <lb/>
+                    <unclear>Frimhurst</unclear>
+                    – she had to write so - &
+                    <lb/>
+                    her hand is also very black.
+                    <lb/>
+                    If you write on blue
+                    <unclear quantity="1" unit="word"/>
+                    paper
+                    <lb/>
+                    I only get such a short letter &
+                    <pb/>
+                    As one depends a good deal upon letters
+                    <lb/>
+                    from home surely he could get some
+                    <lb/>
+                    other paper? You see I am
+                    <unclear quantity="1" unit="word"/>
+                    one
+                    <lb/>
+                    on this subject!! as I have already
+                    <lb/>
+                    <unclear quantity="1" unit="word"/>
+                    two
+                    <unclear quantity="1" unit="word"/>
+                    appeals to papa!!!
+                </p>
+                <p>
+                    I'm in a great
+                    <unclear quantity="3" unit="word"/>
+                    <lb/>
+                    having a return of my Schnupfen!
+                    <lb/>
+                    <unclear quantity="2" unit="word"/>
+                    everyone has one
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    the weather has been horrid. A
+                    <lb/>
+                    hot
+                    <unclear quantity="1" unit="word"/>
+                    & a
+                    <unclear quantity="1" unit="word"/>
+                    to which
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    East winds are a
+                    <unclear quantity="1" unit="word"/>
+                    ! Then I´ve
+                    <lb/>
+                    overworked myself a little and
+                    <lb/>
+                    fear I must continue to do so
+                    <lb/>
+                    for a day or two till my present
+                    <lb/>
+                    <persName key="Beethoven, Ludwig van" ref="https://d-nb.info/gnd/118508288">Beethoven</persName>
+                    Concerto & the
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    Sonata are finished. I am
+                    <lb/>
+                    practising five hours a day at
+                    <lb/>
+                    least - & till all
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    in
+                    <unclear>hand</unclear>
+                    are completed it`s hand
+                    <lb/>
+                    work. Today I shall have
+                    <unclear>rather</unclear>
+                    <lb/>
+                    fun tho. Frau Prof is going to
+                    <lb/>
+                    chaperone me & 2 friends to one
+                    <lb/>
+                    of those
+                    <unclear quantity="1" unit="word"/>
+                    Concerts one
+                    <lb/>
+                    can only find on
+                    <unclear quantity="1" unit="word"/>
+                    the
+                    <lb/>
+                    Continent. At which
+                    <unclear quantity="1" unit="word"/>
+                    <pb/>
+                    Husband who looks an awful little
+                    <lb/>
+                    donkey is going to declaim! (for
+                    <lb/>
+                    a charity). The 2 friends are the two prettiest girls here. Ony my
+                    <lb/>
+                    blonde friend Miss
+                    <unclear quantity="1" unit="word"/>
+                    . The other a
+                    <unclear quantity="1" unit="word"/>
+                    .
+                    <unclear quantity="1" unit="word"/>
+                    . The brownest
+                    <lb/>
+                    brunette you can imagine with
+                    <lb/>
+                    jet black hair, & eyes like black
+                    <lb/>
+                    diamonds. I am
+                    <unclear quantity="1" unit="word"/>
+                    sure she
+                    <lb/>
+                    &
+                    <unclear quantity="1" unit="word"/>
+                    (who have
+                    <unclear quantity="1" unit="word"/>
+                    <unclear quantity="1" unit="word"/>
+                    met
+                    <lb/>
+                    each other) won't hit it off. Res-
+                    <lb/>
+                    pect some fun
+                    <unclear quantity="1" unit="word"/>
+                    my
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    beauties!
+                </p>
+                <p>
+                    <lb/>
+                    The Jubilee Singers have been
+                    <lb/>
+                    Performing in the Gewandhaus
+                    <lb/>
+                    & . as you may imagine – as –
+                    <lb/>
+                    <unclear quantity="1" unit="word"/>
+                    the Germans not a little.
+                    <lb/>
+                    . I think one of the Gentlemen
+                    <lb/>
+                    (primo basso)
+                    <hi rend="underline">must</hi>
+                    be
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    <unclear quantity="1" unit="word"/>
+                    - with his face dyed!
+                    <lb/>
+                    Then last night at the Cham-
+                    <lb/>
+                    ber music (do you remember at
+                    <lb/>
+                    Aunt Louisa´s that day our
+                    <lb/>
+                    Discussion about the Chamber pieces!)
+                    <pb/>
+                    <persName key="Saint-Saens, Camille" ref="https://d-nb.info/gnd/11875081X">Saint-Saens</persName>
+                    Saint-Saens the great French composer
+                    <lb/>
+                    - who besides that is the greatest
+                    <lb/>
+                    player I ever heard bar Rubinstein
+                    <lb/>
+                    (Tho' probably he is not so many
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    Of one
+                    <unclear quantity="1" unit="word"/>
+                    as well) played - &
+                    <lb/>
+                    was called back 9 times
+                    <unclear>. +</unclear>
+                    played
+                    <lb/>
+                    2 Encores!! At the
+                    <unclear quantity="1" unit="word"/>
+                    of all
+                    <lb/>
+                    Things for the benefit of the Conserva-
+                    <lb/>
+                    Tories who went utterly
+                    <hi rend="underline">wild</hi>
+                    over
+                    <lb/>
+                    Him & (when he was here a month
+                    <lb/>
+                    ago) sent him a testimonial!! When
+                    <lb/>
+                    Saint-Saens drove away such a
+                    <unclear quantity="1" unit="word"/>
+                    <lb/>
+                    You never heard. The wanted to
+                    <lb/>
+                    take the horses out - & drag him
+                    <lb/>
+                    home – luckily for him however
+                    <lb/>
+                    (as he was undoubtedly hungry)
+                    <lb/>
+                    His coachman drove on at the
+                    <lb/>
+                    first cry of "Spanne die Pferde
+                    <lb/>
+                    Ab!!". (While I have been sitting
+                    <lb/>
+                    Writing this letter at my window
+                    <lb/>
+                    Which looks out on the Promenade
+                    <lb/>
+                    Abt. 100 yards away I've seen
+                    <lb/>
+                    <hi rend="underline">3</hi>
+                    dwarfs go by!!! This will give
+                    <lb/>
+                    You an idea of the number in
+                    <lb/>
+                    Germany – Its
+                    <hi rend="underline">horrid</hi>
+                    .
+                </p>
+                <closer>
+                    Well Mother
+                    <lb/>
+                    Darling – I´ve written 3 sheets of
+                    <unclear quantity="2" unit="word"/>
+                    <lb/>
+                    Susan &
+                    <hi rend="underline">must</hi>
+                    shut up. Dear
+                    <lb/>
+                    Love to all. Alas for Philis who
+                    <lb/>
+                    Won´t be my only joy any more now. But
+                    <lb/>
+                    Of course she must be used somehow.
+                    <lb/>
+                    Yours ever devoted
+                    <unclear quantity="2" unit="word"/>
+                </closer>
+                <!--
+                    
+                    folgende Elemente können im Textkörper hilfreich sein:
+                    - address, addrLine
+                    - hi (Hervorhebung)
+                    - abbr (Abkürzung)
+                    - lb (Zeilenanfang), pb (Seitenanfang)
+                    - add (Zusatz), del (Streichung)
+                    
+                -->
+            </div>
+        </body>
+    </text>
+</TEI>
